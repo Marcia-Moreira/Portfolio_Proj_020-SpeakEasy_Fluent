@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modo Áudio</title>
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body id="topo">
+
+<header>
+  <div class="nav">
+    <!-- <div class="logo">🎙️SpeakEasy Fluent</div> -->
+    <a href="../index.html">
+      <div class="logo">🎙️️SpeakEasy Fluent</div>
+    </a>
+
+    <nav class="nav-item">
+      <a href="../index.html">Home</a>
+      <a href="study-list.html">Listas</a>
+    </nav>
+  </div>
+</header>
+
+<main class="study-audio">
+
+  <!-- TÍTULO DA LISTA -->
+  <div class="audio-titulo">
+    <h2 id="titulo-lista"></h2>
+  </div>
+
+
+  <!-- VELOCIDADE SOZINHA -->
+  <div class="audio-velocidade">
+    <label>
+      🎯 Velocidade da fala:
+      <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1">
+      <span id="rate-value">1.0x</span>
+    </label>
+  </div>
+
+  <!-- <div class="controls">
+    <label>
+      Velocidade:
+      <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1">
+    </label> -->
+
+  <!-- 🔥 NOVO: TOGGLE DE TRADUÇÃO -->
+  <div class="audio-toggle">
+    <label>
+      <input type="checkbox" id="toggle-traducao" checked>
+      📝 Mostrar tradução
+    </label>
+  </div>
+
+  <!-- BOTÕES EM LINHA -->
+  <div class="audio-botoes">
+    <button id="play">▶️ Play</button>
+    <button id="pause">⏸️ Pause</button>
+    <button id="prev">⏮️ Anterior</button>
+    <button id="repeat">🔁 Repetir</button>
+    <button id="next">⏭️ Próxima</button>
+  </div>
+
+  <!-- <div id="frase-atual" class="frase-atual"></div> -->
+   
+  <!-- CAIXA DA FRASE CENTRALIZADA -->
+  <div class="audio-caixa">
+    <div id="frase-atual" class="frase-atual"></div>
+  </div>
+
+</main>
+
+<!-- Link para voltar ao topo - verificar icon seta pra cima-->
+<a href="#topo" class="btn-topo">Voltar para a Home/Topo</a>
+
+<script type="module" src="../js/study-audio.js"></script>
+
+</body>
+</html>

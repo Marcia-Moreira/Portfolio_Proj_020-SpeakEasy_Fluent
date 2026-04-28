@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎙️SpeakEasy Fluent</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body id="topo">
+
+<header>
+  <div class="nav">
+    <!-- <div class="logo">🎙️️SpeakEasy Fluent</div> -->
+    <a href="index.html">
+      <div class="logo">🎙️️SpeakEasy Fluent</div>
+    </a>
+
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <nav class="menu" id="menu">
+      <a href="templates/study-list.html">Lista Geral</a>
+      <!-- <a href="templates/study-scroll.html">Modo Rolagem</a> -->
+      <!-- <a href="templates/study-list.html">Modo Rolagem</a> -->
+      <!-- <a href="templates/study-audio.html">Modo Áudio</a> -->
+      <!-- <a href="templates/study-list.html">Modo Áudio</a> -->
+      <a href="templates/study-list.html?modo=scroll">Modo Rolagem</a>
+      <a href="templates/study-list.html?modo=audio">Modo Áudio</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="banners">
+
+    <div class="card">
+      <span>Cadastrar Frase<br>(Fase 2)</span>
+    </div>
+
+    <div class="card">
+      <span>Cadastrar Palavra<br>(Fase 2)</span>
+    </div>
+
+  </div>
+</main>
+
+<!-- Link para voltar ao topo - verificar icon seta pra cima-->
+<a href="#topo" class="btn-topo">Voltar para a Home/Topo</a>
+
+<script type="module" src="./js/app.js"></script>
+<script type="module">
+  import { toggleMenu } from "./js/ui.js";
+  window.toggleMenu = toggleMenu;
+</script>
+
+</body>
+</html>

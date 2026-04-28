@@ -1,0 +1,858 @@
+/* ==================================================
+  RESET BÁSICO
+================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==================================================
+  NAVBAR
+================================================== */
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 10;
+  background: #222;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-item a:hover {
+  /* text-decoration: underline; */
+  color: #857e7e;
+}
+
+.nav a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.nav a .logo {
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.nav a .logo:hover {
+  color: #857e7e;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.menu a:hover {
+  color: #857e7e;
+}
+
+/*! REVER Onde isso Funciona! no celular mas ta com uma probleminha */
+.hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/*! Tem que trocar a cor lilas do home!!! -webkit sem underline*/
+
+/* ==================================================
+  MAIN / HOME
+================================================== */
+
+main {
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banners {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 260px;
+  height: 140px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ==================================================
+  ESTILIZAÇÃO GERAL (botões, etc)
+================================================== */
+
+/*! Botoes da pag scroll verificar demais */
+button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #857e7e;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+/*! Botoes da pag scroll verificar demais */
+button:hover {
+  background: #6b6666;
+}
+/* ==================================================
+  BOTÃO MARATONA
+================================================== */
+.maratona-botao {
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+
+#btnMaratonaScroll {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#btnMaratonaScroll:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+/* ==================================================
+  RESPONSIVO MENU
+================================================== */
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* ==================================================
+  STUDY LIST PAGE
+================================================== */
+
+/* .study-list {
+  padding: 20px;
+} */
+
+/* .study-list .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+} */
+
+/* .study-list .card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.2s;
+} */
+
+/* .study-list .card:hover {
+  transform: scale(1.05);
+} */
+
+/* ==================================================
+  STUDY LIST PAGE - 4/3/1 COLUNAS
+================================================== */
+
+.study-list {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;  /* 🔥 FORÇA TUDO EM COLUNA */
+  /* align-items: center; */
+}
+
+/* 🔥 ISOLANDO O TÍTULO */
+.titulo-listas {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  flex-shrink: 0;           /* não encolhe */
+}
+
+.titulo-listas h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* .study-list h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-size: 28px;
+} */
+
+/* GRID SÓ PARA OS CARDS abaixo do título*/
+.study-list .grid {
+  display: grid;
+  /* 4 colunas fixas no desktop */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  justify-items: center;
+  align-items: stretch;
+  width: 100%;              /* ocupa toda largura */
+  max-height: none;
+  overflow: visible;
+  margin-bottom: 30px;
+}
+
+.study-list .card {
+  background: #fff;
+  padding: 20px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+  min-width: 0; /* permite encolher */
+  box-sizing: border-box;
+}
+
+.study-list .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Tablet: 3 colunas */
+@media (max-width: 900px) {
+  .study-list .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Celular: 2 colunas */
+@media (max-width: 600px) {
+  .study-list .grid {
+    grid-template-columns: 2fr;
+    gap: 15px;
+  }
+  
+  .study-list .card {
+    padding: 20px;
+  }
+}
+
+/* ==================================================
+  STUDY DETAIL PAGE
+================================================== */
+
+.study-detail {
+  padding: 20px;
+}
+
+.lista-frases {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.frase-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.frase-alvo {
+  font-weight: bold;
+}
+
+.frase-nativo {
+  color: #555;
+  margin-top: 5px;
+}
+
+/* ==================================================
+  STUDY SCROLL PAGE (erro)
+================================================== */
+
+/* !layout geral da página */
+/* .study-scroll {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+} */
+
+/*! título da lista */
+/* .study-scroll h2 {
+  text-align: center;
+} */
+
+/*! linha: velocidade + toggle */
+/* .controls-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+} */
+
+/*! linha dos botões */
+/* .controls-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+} */
+
+/*! container preto do scroll */
+/* .scroll-container {
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+} */
+
+/*! conteúdo que rola */
+/* .scroll-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  ⚠️ NÃO colocar animation aqui
+} */
+
+/*! .scroll-active {
+  animation-name: scrollUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+} */
+
+/*!essa classe só será adicionada via JS no PLAY */
+/* .scroll-active {
+  animation: scrollUp linear infinite;
+} */
+
+/* se quiser resetar sem animação */
+/* .scroll-reset {
+  animation: none !important;
+} */
+
+/*! item da frase */
+/* .scroll-item {
+  text-align: center;
+} */
+
+/*? inglês .alvo antigo .en */
+/* ..alvo {
+  font-size: 22px;
+  font-weight: bold;
+} */
+
+/*? português */
+/* .nativo {
+  font-size: 16px;
+  color: #bbb;
+} */
+
+/*! animação (se usar play automático via JS) */
+/* @keyframes scrollUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+} */
+
+/* ==================================================
+  * STUDY SCROLL PAGE (revisado 25-04-12:39h)
+================================================== */
+/* ================================================== STUDY SCROLL PAGE (CORRIGIDO) ================================================== */
+/** layout geral da página */
+.study-scroll {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f5f5f5; /* fundo da página */
+}
+
+/** título da lista */
+.study-scroll h2 {
+  text-align: center;
+  /* !Alterado */
+  margin: 0;
+}
+
+/** linha: velocidade + toggle */
+.controls-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/** linha dos botões */
+.controls-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  /* !Alterado */
+  margin: 10px 0;
+}
+
+/** container preto do scroll - FUNDO PRETO GARANTIDO */
+.scroll-container {
+  height: 60vh;
+  /* !Alterado */
+  overflow: hidden;
+  /* largura tela preta: */
+  width: 90%;
+  /*? overflow: hidden; */
+  position: relative;
+  background: #111 !important;
+  border-radius: 5px;
+  /*? border: 2px solid #333;  */
+  /* borda pra visualizar limite */
+}
+
+/** conteúdo que rola = frases */
+.scroll-content {
+  /*? position: absolute; */
+  /*? top: 0; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  /*! ⚠️ NÃO colocar animation aqui*/
+  /* !Alterado */
+  transform: translate(100%);
+}
+
+/** Quando ativar o play: */
+.scroll-active {
+  animation: scrollUp linear infinite;
+}
+
+/** se quiser resetar sem animação */
+.scroll-reset {
+  animation: none !important;
+}
+
+/** item da frase */
+.scroll-item {
+  text-align: center;
+  padding: 15px 0; /* mais espaçamento */
+}
+
+/* inglês - BRANCO GARANTIDO */
+.scroll-item .alvo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white !important;
+  margin-bottom: 5px;
+}
+
+/* português - CINZA CLARO GARANTIDO*/
+.scroll-item .nativo {
+  font-size: 18px;
+  color: #cccccc !important;
+}
+
+/*? animação rever pois está vazando pro teto*/
+@keyframes scrollUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/*? FORÇA CORES DO SCROLL */
+/* .scroll-container * {
+  color: white !important;
+} */
+
+/*? .scroll-container .nativo {
+  color: #cccccc !important;
+} */
+
+/*? .scroll-container {
+  background: #000000 !important;
+} */
+
+/*  */
+
+/* .scroll-item .alvo {
+  color: red !important;
+} */
+/* .scroll-item .nativo {
+  color: blue !important;
+} */
+
+
+/* rever essa decisão! */
+
+/* ==================================================
+  CORREÇÃO DE VAZAMENTO - NAV E MAIN
+================================================== */
+
+/** Garante que o header não "gruda" no conteúdo */
+/* header {
+  position: relative;
+  z-index: 10;
+  background: #222;
+} */
+
+/** Dá espaço para o conteúdo não invadir o header */
+/* body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
+
+/** Isola a área principal */
+/* .study-list {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+} */
+
+/** Título com espaço garantido */
+/* .titulo-listas {
+  margin-top: 20px;
+  margin-bottom: 40px;
+} */
+
+/** Container dos cards com scroll interno se necessário */
+/* .study-list .grid {
+  max-height: none;
+  overflow: visible;
+  margin-bottom: 30px;
+} */
+
+/* =========================================================== */
+
+
+/* ==================================================
+   STUDY AUDIO PAGE
+================================================== */
+
+/* .study-audio {
+  padding: 20px;
+  text-align: center;
+} */
+
+
+/* .frase-atual {
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: bold;
+} */
+
+/* .frase-atual div:last-child {
+  font-size: 18px;
+  color: gray;
+} */
+
+/* rever os de cima */
+
+/* ==================================================
+  STUDY AUDIO PAGE - PADRÃO SCROLL
+================================================== */
+
+.study-audio {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* TÍTULO */
+.audio-titulo {
+  text-align: center;
+  width: 100%;
+}
+
+.audio-titulo h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #222;
+  padding-top: 30px;
+}
+
+/* VELOCIDADE - SOZINHO */
+.audio-velocidade {
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.audio-velocidade label {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.audio-velocidade input {
+  width: 200px;
+  cursor: pointer;
+}
+
+/* 🔥 DEPOIS DO .audio-velocidade - ADICIONE ESTE BLOCO */
+.audio-toggle {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background: #e8e8e8;
+  border-radius: 8px;
+}
+
+.audio-toggle label {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.audio-toggle input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+#rate-value {
+  min-width: 45px;
+  font-weight: bold;
+  color: #0066cc;
+  color: #555;
+}
+
+/* BOTÕES EM LINHA */
+.audio-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.audio-botoes button {
+  /* background: #222; */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+/* !Verificar cor do hover */
+.audio-botoes button:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+.audio-botoes button:active {
+  transform: scale(0.95);
+}
+
+/* CAIXA DA FRASE CENTRALIZADA */
+.audio-caixa {
+  width: 100%;
+  /* height: 50%; */
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 40px 20px;
+  /* background: #111; */
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.frase-atual {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.frase-atual div:first-child {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;  /* Preto ou escuro */
+}
+
+.frase-atual div:last-child {
+  font-size: 20px;
+  color: gray;
+}
+
+/* .frase-atual .alvo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.4;
+} */
+
+/* .frase-atual .nativo {
+  font-size: 20px;
+  color: #cccccc;
+} */
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .audio-botoes button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .frase-atual .alvo {
+    font-size: 22px;
+  }
+  
+  .frase-atual .nativo {
+    font-size: 16px;
+  }
+  
+  .audio-caixa {
+    padding: 30px 15px;
+  }
+}
+
+/* 
+  !CRIAR CSS PARA VOLTAR AO TOPO DA PÁGINA - Baixar icon seta pra cima
+  !e estilizar, posição direita e abaixo fora do main fixo no final da página.
+*/
+
+#topo {
+  scroll-behavior: smooth;
+}
+
+a.btn-topo{
+  color: #7a7a7a;
+}

@@ -1,0 +1,240 @@
+{
+  "listas": [
+    {
+      "id": "sobre_mim_1",
+      "nome": "📌 Sobre mim",
+      "frases": [
+        { "id": "sobre_mim_1_f1", "idioma_alvo": "I'm from Brazil", "idioma_nativo": "Sou do Brasil" },
+        { "id": "sobre_mim_1_f2", "idioma_alvo": "I live in São Paulo", "idioma_nativo": "Moro em São Paulo" },
+        { "id": "sobre_mim_1_f3", "idioma_alvo": "I'm originally from Rio", "idioma_nativo": "Sou originalmente do Rio" },
+        { "id": "sobre_mim_1_f4", "idioma_alvo": "I'm a web developer", "idioma_nativo": "Sou desenvolvedora web" },
+        { "id": "sobre_mim_1_f5", "idioma_alvo": "I've been working with front-end", "idioma_nativo": "Trabalho com front-end" },
+        { "id": "sobre_mim_1_f6", "idioma_alvo": "I've been coming here for years", "idioma_nativo": "Venho aqui há anos" },
+        { "id": "sobre_mim_1_f7", "idioma_alvo": "It's my fourth time here", "idioma_nativo": "É minha quarta vez aqui" },
+        { "id": "sobre_mim_1_f8", "idioma_alvo": "I'm here for a tech conference", "idioma_nativo": "Estou aqui para uma conferência de tecnologia" },
+        { "id": "sobre_mim_1_f9", "idioma_alvo": "I grew up in the countryside", "idioma_nativo": "Cresci no interior" },
+        { "id": "sobre_mim_1_f10", "idioma_alvo": "I've been here for about three years", "idioma_nativo": "Estou aqui há uns três anos" },
+        { "id": "sobre_mim_1_f11", "idioma_alvo": "I'm still learning the language", "idioma_nativo": "Ainda estou aprendendo o idioma" },
+        { "id": "sobre_mim_1_f12", "idioma_alvo": "I work remotely", "idioma_nativo": "Trabalho remoto" }
+      ]
+    },
+    {
+      "id": "na_cafeteria_2",
+      "nome": "☕ Cafeteria",
+      "frases": [
+        { "id": "cafeteria_2_f1", "idioma_alvo": "Can I get a black coffee?", "idioma_nativo": "Posso pedir um café preto?" },
+        { "id": "cafeteria_2_f2", "idioma_alvo": "No milk, no sugar", "idioma_nativo": "Sem leite, sem açúcar" },
+        { "id": "cafeteria_2_f3", "idioma_alvo": "Just black", "idioma_nativo": "Só puro" },
+        { "id": "cafeteria_2_f4", "idioma_alvo": "Anything else?", "idioma_nativo": "Mais alguma coisa?" },
+        { "id": "cafeteria_2_f5", "idioma_alvo": "That's it", "idioma_nativo": "É só isso" },
+        { "id": "cafeteria_2_f6", "idioma_alvo": "For here or to go?", "idioma_nativo": "Aqui ou para viagem?" },
+        { "id": "cafeteria_2_f7", "idioma_alvo": "To go, please", "idioma_nativo": "Para viagem, por favor" },
+        { "id": "cafeteria_2_f8", "idioma_alvo": "We'll call your name", "idioma_nativo": "Vamos chamar seu nome" },
+        { "id": "cafeteria_2_f9", "idioma_alvo": "Can I have a cup of tea?", "idioma_nativo": "Me vê um chá?" },
+        { "id": "cafeteria_2_f10", "idioma_alvo": "What's the Wi-Fi password?", "idioma_nativo": "Qual a senha do Wi-Fi?" },
+        { "id": "cafeteria_2_f11", "idioma_alvo": "Can I charge my phone here?", "idioma_nativo": "Posso carregar meu celular aqui?" },
+        { "id": "cafeteria_2_f12", "idioma_alvo": "Is the bathroom for customers only?", "idioma_nativo": "O banheiro é só pra cliente?" }
+      ]
+    },
+    {
+      "id": "na_rua_3",
+      "nome": "🚶 Na rua",
+      "frases": [
+        { "id": "na_rua_3_f1", "idioma_alvo": "Excuse me", "idioma_nativo": "Com licença" },
+        { "id": "na_rua_3_f2", "idioma_alvo": "Is this the way to...?", "idioma_nativo": "Esse é o caminho para...?" },
+        { "id": "na_rua_3_f3", "idioma_alvo": "How far is it?", "idioma_nativo": "É longe?" },
+        { "id": "na_rua_3_f4", "idioma_alvo": "Just around the corner", "idioma_nativo": "Logo ali na esquina" },
+        { "id": "na_rua_3_f5", "idioma_alvo": "Go straight", "idioma_nativo": "Siga reto" },
+        { "id": "na_rua_3_f6", "idioma_alvo": "Turn left/right", "idioma_nativo": "Vire esquerda/direita" },
+        { "id": "na_rua_3_f7", "idioma_alvo": "Is this seat taken?", "idioma_nativo": "Esse lugar está ocupado?" },
+        { "id": "na_rua_3_f8", "idioma_alvo": "Do you know what time it is?", "idioma_nativo": "Você tem horas?" },
+        { "id": "na_rua_3_f9", "idioma_alvo": "Can you help me out real quick?", "idioma_nativo": "Pode me ajudar rapidão?" },
+        { "id": "na_rua_3_f10", "idioma_alvo": "I think I'm lost", "idioma_nativo": "Acho que me perdi" }
+      ]
+    },
+    {
+      "id": "reacoes_4",
+      "nome": "😐 Reações e respostas",
+      "frases": [
+        { "id": "reacoes_4_f1", "idioma_alvo": "Got it", "idioma_nativo": "Entendi" },
+        { "id": "reacoes_4_f2", "idioma_alvo": "Makes sense", "idioma_nativo": "Faz sentido" },
+        { "id": "reacoes_4_f3", "idioma_alvo": "No worries", "idioma_nativo": "Sem problema" },
+        { "id": "reacoes_4_f4", "idioma_alvo": "All good", "idioma_nativo": "Tudo certo" },
+        { "id": "reacoes_4_f5", "idioma_alvo": "My bad", "idioma_nativo": "Foi mal" },
+        { "id": "reacoes_4_f6", "idioma_alvo": "Fair enough", "idioma_nativo": "Justo" },
+        { "id": "reacoes_4_f7", "idioma_alvo": "Sounds good", "idioma_nativo": "Parece bom / combinado" },
+        { "id": "reacoes_4_f8", "idioma_alvo": "You're kidding, right?", "idioma_nativo": "Tá brincando, né?" },
+        { "id": "reacoes_4_f9", "idioma_alvo": "That's wild", "idioma_nativo": "Que loucura" },
+        { "id": "reacoes_4_f10", "idioma_alvo": "I feel you", "idioma_nativo": "Te entendo" },
+        { "id": "reacoes_4_f11", "idioma_alvo": "Same here", "idioma_nativo": "Por aqui também" },
+        { "id": "reacoes_4_f12", "idioma_alvo": "Tell me about it", "idioma_nativo": "Nem me fale" }
+      ]
+    },
+    {
+      "id": "profissao_5",
+      "nome": "💻 Profissão / Networking",
+      "frases": [
+        { "id": "profissao_5_f1", "idioma_alvo": "What do you do?", "idioma_nativo": "O que você faz?" },
+        { "id": "profissao_5_f2", "idioma_alvo": "I work in tech", "idioma_nativo": "Trabalho com tecnologia" },
+        { "id": "profissao_5_f3", "idioma_alvo": "I'm into web development", "idioma_nativo": "Trabalho com desenvolvimento web" },
+        { "id": "profissao_5_f4", "idioma_alvo": "What are you working on?", "idioma_nativo": "No que você está trabalhando?" },
+        { "id": "profissao_5_f5", "idioma_alvo": "That's interesting", "idioma_nativo": "Interessante" },
+        { "id": "profissao_5_f6", "idioma_alvo": "I'm between jobs right now", "idioma_nativo": "Tô desempregada no momento" },
+        { "id": "profissao_5_f7", "idioma_alvo": "I just got promoted", "idioma_nativo": "Acabei de ser promovida" },
+        { "id": "profissao_5_f8", "idioma_alvo": "I'm on a tight deadline", "idioma_nativo": "Tô com prazo apertado" },
+        { "id": "profissao_5_f9", "idioma_alvo": "Let's circle back on that", "idioma_nativo": "Depois a gente volta nisso" },
+        { "id": "profissao_5_f10", "idioma_alvo": "I'll shoot you an email", "idioma_nativo": "Te mando um e-mail" }
+      ]
+    },
+    {
+      "id": "aeroporto_6",
+      "nome": "✈️ Aeroporto / Avião",
+      "frases": [
+        { "id": "aeroporto_6_f1", "idioma_alvo": "I have a lactose-free meal", "idioma_nativo": "Tenho refeição sem lactose" },
+        { "id": "aeroporto_6_f2", "idioma_alvo": "I requested a special meal", "idioma_nativo": "Pedi uma refeição especial" },
+        { "id": "aeroporto_6_f3", "idioma_alvo": "Do you have anything without dairy?", "idioma_nativo": "Tem algo sem leite?" },
+        { "id": "aeroporto_6_f4", "idioma_alvo": "Window or aisle?", "idioma_nativo": "Janela ou corredor?" },
+        { "id": "aeroporto_6_f5", "idioma_alvo": "Carry-on or checked bag?", "idioma_nativo": "Bagagem de mão ou despachada?" },
+        { "id": "aeroporto_6_f6", "idioma_alvo": "I need to check this bag", "idioma_nativo": "Preciso despachar essa mala" },
+        { "id": "aeroporto_6_f7", "idioma_alvo": "Is my flight on time?", "idioma_nativo": "Meu voo está no horário?" },
+        { "id": "aeroporto_6_f8", "idioma_alvo": "Where's the boarding gate?", "idioma_nativo": "Onde é o portão de embarque?" },
+        { "id": "aeroporto_6_f9", "idioma_alvo": "I have a connecting flight", "idioma_nativo": "Tenho uma conexão" }
+      ]
+    },
+    {
+      "id": "mercado_7",
+      "nome": "🛒 Mercado",
+      "frases": [
+        { "id": "mercado_7_f1", "idioma_alvo": "Do you have this without dairy?", "idioma_nativo": "Tem isso sem leite?" },
+        { "id": "mercado_7_f2", "idioma_alvo": "Is this gluten-free?", "idioma_nativo": "Isso é sem glúten?" },
+        { "id": "mercado_7_f3", "idioma_alvo": "Where can I find...?", "idioma_nativo": "Onde encontro...?" },
+        { "id": "mercado_7_f4", "idioma_alvo": "It's over there", "idioma_nativo": "Está ali" },
+        { "id": "mercado_7_f5", "idioma_alvo": "Where's the dairy aisle?", "idioma_nativo": "Onde fica o corredor de laticínios?" },
+        { "id": "mercado_7_f6", "idioma_alvo": "Can I get a rain check?", "idioma_nativo": "Posso levar depois com o mesmo preço?" },
+        { "id": "mercado_7_f7", "idioma_alvo": "I forgot my reusable bag", "idioma_nativo": "Esqueci minha sacola retornável" }
+      ]
+    },
+    {
+      "id": "compras_8",
+      "nome": "🛍️ Fazendo compras",
+      "frases": [
+        { "id": "compras_8_f1", "idioma_alvo": "How much is this?", "idioma_nativo": "Quanto custa?" },
+        { "id": "compras_8_f2", "idioma_alvo": "Do you take card?", "idioma_nativo": "Aceitam cartão?" },
+        { "id": "compras_8_f3", "idioma_alvo": "Do you want a bag?", "idioma_nativo": "Quer sacola?" },
+        { "id": "compras_8_f4", "idioma_alvo": "You're all set", "idioma_nativo": "Tudo certo / finalizado" },
+        { "id": "compras_8_f5", "idioma_alvo": "I'm just browsing, thanks", "idioma_nativo": "Só tô olhando, valeu" },
+        { "id": "compras_8_f6", "idioma_alvo": "Can I get a gift receipt?", "idioma_nativo": "Dá pra tirar notinha de presente?" },
+        { "id": "compras_8_f7", "idioma_alvo": "This is a bit pricey", "idioma_nativo": "Isso tá meio caro" }
+      ]
+    },
+    {
+      "id": "evento_9",
+      "nome": "🎁 Evento (RSA / tech)",
+      "frases": [
+        { "id": "evento_9_f1", "idioma_alvo": "Can I grab one?", "idioma_nativo": "Posso pegar um?" },
+        { "id": "evento_9_f2", "idioma_alvo": "Is this free?", "idioma_nativo": "Isso é de graça?" },
+        { "id": "evento_9_f3", "idioma_alvo": "Can I scan my badge?", "idioma_nativo": "Posso escanear meu crachá?" },
+        { "id": "evento_9_f4", "idioma_alvo": "What do I need to do?", "idioma_nativo": "O que preciso fazer?" },
+        { "id": "evento_9_f5", "idioma_alvo": "How does it work?", "idioma_nativo": "Como funciona?" },
+        { "id": "evento_9_f6", "idioma_alvo": "We're doing a giveaway", "idioma_nativo": "Estamos fazendo um sorteio" },
+        { "id": "evento_9_f7", "idioma_alvo": "What's the schedule for today?", "idioma_nativo": "Qual é a programação de hoje?" },
+        { "id": "evento_9_f8", "idioma_alvo": "Do you have a map of the venue?", "idioma_nativo": "Tem um mapa do local?" },
+        { "id": "evento_9_f9", "idioma_alvo": "Where's the registration desk?", "idioma_nativo": "Onde fica o credenciamento?" }
+      ]
+    },
+    {
+      "id": "lactose_10",
+      "nome": "🧀 Lactose / Restrições",
+      "frases": [
+        { "id": "lactose_10_f1", "idioma_alvo": "I'm lactose intolerant", "idioma_nativo": "Sou intolerante à lactose" },
+        { "id": "lactose_10_f2", "idioma_alvo": "No dairy, please", "idioma_nativo": "Sem leite, por favor" },
+        { "id": "lactose_10_f3", "idioma_alvo": "Does this have milk?", "idioma_nativo": "Isso tem leite?" },
+        { "id": "lactose_10_f4", "idioma_alvo": "I'll have the vegan option", "idioma_nativo": "Vou querer a opção vegana" },
+        { "id": "lactose_10_f5", "idioma_alvo": "Is this made with butter?", "idioma_nativo": "Isso é feito com manteiga?" },
+        { "id": "lactose_10_f6", "idioma_alvo": "I can't do dairy at all", "idioma_nativo": "Não posso comer leite de jeito nenhum" }
+      ]
+    },
+    {
+      "id": "chunks_11",
+      "nome": "🧩 Chunks (blocos muito usados)",
+      "frases": [
+        { "id": "chunks_11_f1", "idioma_alvo": "I'll take that", "idioma_nativo": "Vou querer isso" },
+        { "id": "chunks_11_f2", "idioma_alvo": "Let me check", "idioma_nativo": "Deixa eu ver" },
+        { "id": "chunks_11_f3", "idioma_alvo": "Give me a second", "idioma_nativo": "Um segundo" },
+        { "id": "chunks_11_f4", "idioma_alvo": "Hang on", "idioma_nativo": "Espera aí" },
+        { "id": "chunks_11_f5", "idioma_alvo": "I'm good", "idioma_nativo": "Estou bem / não preciso" },
+        { "id": "chunks_11_f6", "idioma_alvo": "I'm all set", "idioma_nativo": "Já estou resolvida" },
+        { "id": "chunks_11_f7", "idioma_alvo": "Long time no see", "idioma_nativo": "Quanto tempo" },
+        { "id": "chunks_11_f8", "idioma_alvo": "Take your time", "idioma_nativo": "Fica à vontade / sem pressa" },
+        { "id": "chunks_11_f9", "idioma_alvo": "I'll be right back", "idioma_nativo": "Já volto" },
+        { "id": "chunks_11_f10", "idioma_alvo": "Don't worry about it", "idioma_nativo": "Esquece / fica tranquilo" }
+      ]
+    },
+    {
+      "id": "reducoes_12",
+      "nome": "🧠 Reduções (como eles realmente falam)",
+      "frases": [
+        { "id": "reducoes_12_f1", "idioma_alvo": "Gonna = going to", "idioma_nativo": "I'm gonna go → Vou ir" },
+        { "id": "reducoes_12_f2", "idioma_alvo": "Wanna = want to", "idioma_nativo": "I wanna try → Quero tentar" },
+        { "id": "reducoes_12_f3", "idioma_alvo": "Gotta = got to", "idioma_nativo": "I gotta go → Tenho que ir" },
+        { "id": "reducoes_12_f4", "idioma_alvo": "Lemme = let me", "idioma_nativo": "Lemme see → Deixa eu ver" },
+        { "id": "reducoes_12_f5", "idioma_alvo": "Kinda = kind of", "idioma_nativo": "It's kinda far → É meio longe" },
+        { "id": "reducoes_12_f6", "idioma_alvo": "Outta = out of", "idioma_nativo": "I'm outta here → Vou vazar" },
+        { "id": "reducoes_12_f7", "idioma_alvo": "C'mon = come on", "idioma_nativo": "C'mon man! → Qual é, cara!" }
+      ]
+    },
+    {
+      "id": "corporativo_13",
+      "nome": "🏢 Termos corporativos / Tech",
+      "frases": [
+        { "id": "corporativo_13_f1", "idioma_alvo": "Deadline", "idioma_nativo": "Prazo" },
+        { "id": "corporativo_13_f2", "idioma_alvo": "Follow up", "idioma_nativo": "Acompanhar" },
+        { "id": "corporativo_13_f3", "idioma_alvo": "Touch base", "idioma_nativo": "Alinhar rapidamente" },
+        { "id": "corporativo_13_f4", "idioma_alvo": "Let's sync", "idioma_nativo": "Vamos alinhar" },
+        { "id": "corporativo_13_f5", "idioma_alvo": "Circle back", "idioma_nativo": "Voltar ao assunto" },
+        { "id": "corporativo_13_f6", "idioma_alvo": "I'm looping you in", "idioma_nativo": "Vou te incluir no loop" },
+        { "id": "corporativo_13_f7", "idioma_alvo": "Let's table that for now", "idioma_nativo": "Vamos deixar isso de lado por enquanto" },
+        { "id": "corporativo_13_f8", "idioma_alvo": "What's the game plan?", "idioma_nativo": "Qual o plano?" },
+        { "id": "corporativo_13_f9", "idioma_alvo": "I'll take the lead on this", "idioma_nativo": "Vou ficar responsável por isso" }
+      ]
+    },
+    {
+      "id": "social_14",
+      "nome": "🧍 Pequenas interações sociais",
+      "frases": [
+        { "id": "social_14_f1", "idioma_alvo": "Nice to meet you", "idioma_nativo": "Prazer" },
+        { "id": "social_14_f2", "idioma_alvo": "Where are you from?", "idioma_nativo": "De onde você é?" },
+        { "id": "social_14_f3", "idioma_alvo": "How do you like it here?", "idioma_nativo": "O que está achando daqui?" },
+        { "id": "social_14_f4", "idioma_alvo": "How's everything going?", "idioma_nativo": "Como vão as coisas?" },
+        { "id": "social_14_f5", "idioma_alvo": "It was great seeing you", "idioma_nativo": "Foi ótimo te ver" }
+      ]
+    },
+    {
+      "id": "aleatorias_15",
+      "nome": "🔀 Frases aleatórias (bem reais)",
+      "frases": [
+        { "id": "aleatorias_15_f1", "idioma_alvo": "I'm just looking", "idioma_nativo": "Só estou olhando" },
+        { "id": "aleatorias_15_f2", "idioma_alvo": "I'll pass", "idioma_nativo": "Vou passar" },
+        { "id": "aleatorias_15_f3", "idioma_alvo": "Why not?", "idioma_nativo": "Por que não?" },
+        { "id": "aleatorias_15_f4", "idioma_alvo": "It depends", "idioma_nativo": "Depende" },
+        { "id": "aleatorias_15_f5", "idioma_alvo": "Not really", "idioma_nativo": "Não muito" },
+        { "id": "aleatorias_15_f6", "idioma_alvo": "Whatever works for you", "idioma_nativo": "Do jeito que funcionar pra você" },
+        { "id": "aleatorias_15_f7", "idioma_alvo": "I'm down for that", "idioma_nativo": "Topo sim" },
+        { "id": "aleatorias_15_f8", "idioma_alvo": "That sucks", "idioma_nativo": "Que droga" },
+        { "id": "aleatorias_15_f9", "idioma_alvo": "You gotta be kidding me", "idioma_nativo": "Não é possível" }
+      ]
+    },
+    {
+      "id": "termos_corporativos_16",
+      "nome": "📊 Termos Corporativos",
+      "frases": [
+        { "id": "termos_corporativos_16_f1", "idioma_alvo": "Let's align on this", "idioma_nativo": "Vamos alinhar isso" },
+        { "id": "termos_corporativos_16_f2", "idioma_alvo": "I'll ping you later", "idioma_nativo": "Te chamo depois" },
+        { "id": "termos_corporativos_16_f3", "idioma_alvo": "What's the ETA on that?", "idioma_nativo": "Qual a previsão disso?" },
+        { "id": "termos_corporativos_16_f4", "idioma_alvo": "Let's move forward with this", "idioma_nativo": "Vamos pra frente com isso" },
+        { "id": "termos_corporativos_16_f5", "idioma_alvo": "I need your eyes on this", "idioma_nativo": "Preciso que você dê uma olhada nisso" },
+        { "id": "termos_corporativos_16_f6", "idioma_alvo": "Let's not overcomplicate it", "idioma_nativo": "Vamos não complicar" }
+      ]
+    }
+  ]
+}

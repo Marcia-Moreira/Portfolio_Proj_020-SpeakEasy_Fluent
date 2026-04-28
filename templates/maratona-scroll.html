@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maratona Scroll - SpeakEasy</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body id="topo">
+
+<header>
+  <div class="nav">
+    <a href="../index.html">
+      <div class="logo">🎙️️SpeakEasy Fluent</div>
+    </a>
+    <nav class="nav-item">
+      <a href="../index.html">Home</a>
+      <a href="study-list.html">Listas</a>
+    </nav>
+  </div>
+</header>
+
+<main class="study-scroll">
+  <!-- LINHA 1 -->
+  <h2 id="titulo-lista">🏁 Maratona: <span id="progresso">0/0</span></h2>
+
+  <!-- LINHA 2 -->
+  <div class="controls-top">
+    <label>
+      Velocidade:
+      <input type="range" id="speed" min="1" max="100" value="50">
+    </label>
+    <label>
+      <input type="checkbox" id="toggle-pt" checked>
+      Mostrar tradução
+    </label>
+  </div>
+
+  <!-- LINHA 3 -->
+  <div class="controls-buttons">
+    <button id="playScroll">▶️ Play</button>
+    <button id="pauseScroll">⏸️ Pause</button>
+    <button id="resetScroll">🔄 Reset</button>
+  </div>
+
+  <!-- SCROLL -->
+  <div class="scroll-container">
+    <div id="scroll-content" class="scroll-content"></div>
+  </div>
+</main>
+
+<a href="#topo" class="btn-topo">Voltar para o Topo</a>
+
+<script type="module" src="../js/maratona-scroll.js"></script>
+</body>
+</html>
