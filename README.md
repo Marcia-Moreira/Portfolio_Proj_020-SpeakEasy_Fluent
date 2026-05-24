@@ -171,3 +171,29 @@ Ideal para:
 - **+80 frases nativas** (e crescendo!)
 - **Tempo médio por lista:** 5-10 minutos
 - **Meta:** 30 minutos de maratona completa
+
+---
+
+## ✅ Status do projeto (MVP)
+
+### Totalmente funcional
+- ✅ Modo Scroll (lista única)
+- ✅ Maratona Scroll (todas as listas)
+- ✅ Cards responsivos (4/3/1 colunas)
+- ✅ Toggle de tradução (scroll)
+- ✅ Controles Play/Pause/Reset
+- ✅ GitHub Pages funcionando (web + mobile)
+
+### Parcialmente funcional
+- 🟡 Modo Áudio (requer tela ativa)
+- 🟡 Velocidade padrão (ajustando)
+
+### Em desenvolvimento
+- 🔄 Maratona Áudio
+- 🔄 Contador de frases
+- 🔄 Scroll infinito sem delay
+
+### Próximos passos
+- 📝 Suporte a músicas/trechos
+- 🎙️ Backend para criar listas
+- 🔇 Áudio em background

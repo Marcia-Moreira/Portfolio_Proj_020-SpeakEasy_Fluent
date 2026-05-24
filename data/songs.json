@@ -1,0 +1,14 @@
+{
+    "songs": [
+        {
+        "id": "beyonce_halo",
+        "type": "song",
+        "artist": "Beyonce",
+        "song_name": "Halo",
+        "name": "Halo",
+        "phrases": [
+            { "id": "halo_f001", "target_text": "Everywhere I'm looking now", "native_text": "Agora, em todo lugar que eu olho" }
+        ]
+        }
+    ]
+}

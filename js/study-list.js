@@ -20,12 +20,12 @@ async function renderListas() {
     // card.addEventListener("click", () => {
     //   window.location.href = `study-detail.html?id=${lista.id}`;
     //   window.location.href = `study-scroll.html?id=${lista.id}`;
-    //   window.location.href = `study-audio.html?id=${lista.id}`;
+    //   window.location.href = `study-speak.html?id=${lista.id}`;
     // });
 
     card.addEventListener("click", () => {
       if (modo === "audio") {
-        window.location.href = `study-audio.html?id=${lista.id}`;
+        window.location.href = `study-speak.html?id=${lista.id}`;
       } else {
         // default = scroll
         window.location.href = `study-scroll.html?id=${lista.id}`;
@@ -40,7 +40,7 @@ async function renderListas() {
 renderListas();
 
 // window.location.href = `study-detail.html?id=${lista.id}`;
-// window.location.href = `study-audio.html?id=${lista.id}`;
+// window.location.href = `study-speak.html?id=${lista.id}`;
 
 const btnMaratona = document.getElementById("btnMaratonaScroll");
 if (btnMaratona) {

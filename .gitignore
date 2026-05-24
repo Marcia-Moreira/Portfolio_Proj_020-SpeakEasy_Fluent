@@ -1,6 +1,6 @@
 
 
-# Rascunhos_do_projeto
+#! Rascunhos_do_projeto:
 # Ignore all files in the rascunhos_do_projeto directory
 rascunhos_do_projeto/*
 
@@ -8,3 +8,16 @@ rascunhos_do_projeto/*
 anotacoes_gerais_do_projeto.txt
 
 lista_frases_ingles-portuges_001.txt
+
+serie_Everybody_Hates_Chris/
+
+model_layout_json_db/
+
+frases_entrevista_ingles.txt
+
+
+#! Revisão de arquivos relacionados a frases e lançamentos:
+
+lancamento_produto.txt
+
+README-Projeto.md

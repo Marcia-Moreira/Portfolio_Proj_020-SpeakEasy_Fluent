@@ -1,0 +1,15 @@
+{
+    "series": [
+        {
+        "id": "everybody_hates_chris_s01e01",
+        "type": "series",
+        "series_name": "Everybody Hates Chris",
+        "season": 1,
+        "episode": 1,
+        "name": "S01E01 - Intro",
+        "phrases": [
+            { "id": "ehc_s01e01_f001", "target_text": "That was the year I turned 13.", "native_text": "Esse foi o ano em que eu fiz treze anos." }
+        ]
+        }
+    ]
+}

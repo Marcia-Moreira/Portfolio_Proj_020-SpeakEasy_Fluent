@@ -1,0 +1,14 @@
+{
+    "lists": [
+        {
+        "id": "about_me_1",
+        "type": "list",
+        "name": "About Me",
+        "category": "daily_life",
+        "phrases": [
+            { "id": "about_me_1_f1", "target_text": "I'm from Brazil", "native_text": "Sou do Brasil" },
+            { "id": "about_me_1_f2", "target_text": "I'm 30 years old", "native_text": "Tenho trinta anos" }
+        ]
+        }
+    ]
+}

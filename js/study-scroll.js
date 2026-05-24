@@ -49,7 +49,8 @@ function render() {
   animacaoIniciada = false;
   container.classList.remove("scroll-active");
   container.style.animation = "none";
-  container.style.transform = "translateY(100%)";
+  //! container.style.transform = "translateY(100%)";
+  // container.style.transform = "translateY(0)";
 }
 
 //! Alterado
@@ -81,7 +82,8 @@ function play() {
     duration = Math.max(2, Math.min(50, duration));
 
     container.style.animation = "none";
-    container.style.transform = "translateY(100%)";
+    //! container.style.transform = "translateY(100%)";
+    // container.style.transform = "translateY(0)";
     container.offsetHeight;
     container.style.animation = `scrollUp ${duration}s linear infinite`;
     container.classList.add("scroll-active");
@@ -104,7 +106,8 @@ function pause() {
 function reset() {
   container.style.animation = "none";
   container.classList.remove("scroll-active");
-  container.style.transform = "translateY(100%)";
+  //! container.style.transform = "translateY(100%)";
+  // container.style.transform = "translateY(0)";
   container.offsetHeight;
   
   // 🔥 IMPORTANTE: reseta a flag para começar do fundo no próximo play
