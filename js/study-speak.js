@@ -38,12 +38,12 @@ async function carregarLista() {
 
   listaAtual = await getListaById(id);
 
-  if (!listaAtual || !listaAtual.frases) {
+  if (!listaAtual || !listaAtual.phrases) {
     fraseAtualDiv.innerText = "Lista vazia.";
     return;
   }
 
-  titulo.innerText = listaAtual.nome;
+  titulo.innerText = listaAtual.name;
 }
 
 //* =====================================================
@@ -69,17 +69,17 @@ rateInput.addEventListener("input", () => {
 
 // 🔥 BLOCO QUE ALTERA FRASE 
 toggleTraducao.addEventListener("change", () => {
-  if (listaAtual && listaAtual.frases[index]) {
-    const frase = listaAtual.frases[index];
+  if (listaAtual && listaAtual.phrases[index]) {
+    const frase = listaAtual.phrases[index];
     // Mantém o mesmo padrão sem classes
     if (toggleTraducao.checked) {
       fraseAtualDiv.innerHTML = `
-        <div>${frase.idioma_alvo}</div>
-        <div style="color: gray;">${frase.idioma_nativo}</div>
+        <div>${frase.target_text}</div>
+        <div style="color: gray;">${frase.native_text}</div>
       `;
     } else {
       fraseAtualDiv.innerHTML = `
-        <div>${frase.idioma_alvo}</div>
+        <div>${frase.target_text}</div>
       `;
     }
   }
@@ -97,30 +97,30 @@ async function playLoop() {
   audioAtivo = true;
   
   while (isPlaying && audioAtivo) {
-    const frase = listaAtual.frases[index];
+    const frase = listaAtual.phrases[index];
     
     // Mesma lógica do tocarFrase
     if (toggleTraducao.checked) {
       fraseAtualDiv.innerHTML = `
-        <div>${frase.idioma_alvo}</div>
-        <div style="color: gray;">${frase.idioma_nativo}</div>
+        <div>${frase.target_text}</div>
+        <div style="color: gray;">${frase.native_text}</div>
       `;
     } else {
       fraseAtualDiv.innerHTML = `
-        <div>${frase.idioma_alvo}</div>
+        <div>${frase.target_text}</div>
       `;
     }
     
     // Primeira vez em Idioma Alvo
     if (!isPlaying) break;
-    await falar(frase.idioma_alvo, "en-US");
+    await falar(frase.target_text, "en-US");
     
     if (!isPlaying) break;
     await delay(500);
 
     // Segunda vez em Idioma Alvo (repetição)
     if (!isPlaying) break;
-    await falar(frase.idioma_alvo, "en-US");
+    await falar(frase.target_text, "en-US");
     
     if (!isPlaying) break;
     await delay(500);
@@ -128,19 +128,19 @@ async function playLoop() {
     // Terceira vez em Idioma Nativo (repetição)
     if (toggleTraducao.checked) {
       if (!isPlaying) break;
-      await falar(frase.idioma_nativo, "pt-BR");
+      await falar(frase.native_text, "pt-BR");
       if (!isPlaying) break;
       await delay(500);
     }
     
     // Quarta vez em Idioma Alvo (repetição final)
     if (!isPlaying) break;
-    await falar(frase.idioma_alvo, "en-US");
+    await falar(frase.target_text, "en-US");
     
     if (!isPlaying) break;
     await delay(1000);
     
-    index = (index + 1) % listaAtual.frases.length;
+    index = (index + 1) % listaAtual.phrases.length;
   }
 }
 
@@ -181,30 +181,30 @@ async function tocarFrase(frase) {
   // Volta ao HTML simples, sem classes
   if (toggleTraducao.checked) {
     fraseAtualDiv.innerHTML = `
-      <div>${frase.idioma_alvo}</div>
-      <div style="color: gray;">${frase.idioma_nativo}</div>
+      <div>${frase.target_text}</div>
+      <div style="color: gray;">${frase.native_text}</div>
     `;
   } else {
     fraseAtualDiv.innerHTML = `
-      <div>${frase.idioma_alvo}</div>
+      <div>${frase.target_text}</div>
     `;
   }
   // Primeira vez Idioma Alvo
-  await falar(frase.idioma_alvo, "en-US");
+  await falar(frase.target_text, "en-US");
   await delay(300);
 
   // Segunda vez Idioma Alvo
-  await falar(frase.idioma_alvo, "en-US");
+  await falar(frase.target_text, "en-US");
   await delay(300);
   
   // Primeira vez Idioma Nativo
   if (toggleTraducao.checked) {
-    await falar(frase.idioma_nativo, "pt-BR");
+    await falar(frase.native_text, "pt-BR");
     await delay(300);
   }
   
   // Terceira vez Idioma Alvo
-  await falar(frase.idioma_alvo, "en-US");
+  await falar(frase.target_text, "en-US");
 }
 
 //* =====================================================
@@ -221,10 +221,10 @@ btnPrev.addEventListener("click", async () => {
   await delay(200);
   
   // Volta a frase
-  index = (index - 1 + listaAtual.frases.length) % listaAtual.frases.length;
+  index = (index - 1 + listaAtual.phrases.length) % listaAtual.phrases.length;
   
   // Toca a nova frase
-  const frase = listaAtual.frases[index];
+  const frase = listaAtual.phrases[index];
   await tocarFrase(frase);
   
   // Retoma o loop se estava rodando
@@ -248,7 +248,7 @@ btnRepeat.addEventListener("click", async () => {
   await delay(200);
   
   // Toca a frase atual sem cancel
-  const frase = listaAtual.frases[index];
+  const frase = listaAtual.phrases[index];
   await tocarFrase(frase);
   
   // Retoma o loop se estava rodando
@@ -272,10 +272,10 @@ btnNext.addEventListener("click", async () => {
   await delay(200);
   
   // Avança a frase
-  index = (index + 1) % listaAtual.frases.length;
+  index = (index + 1) % listaAtual.phrases.length;
   
   // Toca a nova frase
-  const frase = listaAtual.frases[index];
+  const frase = listaAtual.phrases[index];
   await tocarFrase(frase);
   
   // Retoma o loop se estava rodando

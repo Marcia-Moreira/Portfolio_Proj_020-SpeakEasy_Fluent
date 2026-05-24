@@ -1,91 +1,94 @@
 export const listasPadrao = [
   {
     id: "sobre_mim_1",
-    nome: "Sobre mim"
+    name: "Sobre mim"
   },
   {
     id: "na_cafeteria_2",
-    nome: "Cafeteria"
+    name: "Cafeteria"
   },
   {
     id: "na_rua_3",
-    nome: "Na rua"
+    name: "Na rua"
   },
   {
     id: "reacoes_4",
-    nome: "Reações e respostas"
+    name: "Reações e respostas"
   },
   {
     id: "profissao_5",
-    nome: "Profissão / Networking"
+    name: "Profissão / Networking"
   },
   {
     id: "no_aeroporto_6",
-    nome: "No aeroporto / avião"
+    name: "No aeroporto / avião"
   },
   {
     id: "mercado_7",
-    nome: "No mercado"
+    name: "No mercado"
   },
   {
     id: "nas_compras_8",
-    nome: "Fazendo compras"
+    name: "Fazendo compras"
   },
   {
     id: "no_evento_9",
-    nome: "Evento (RSA / tech)"
+    name: "Evento (RSA / tech)"
   },
   {
     id: "lactose_10",
-    nome: "Lactose / Restrições"
+    name: "Lactose / Restrições"
   },
   {
     id: "chunks_11",
-    nome: "Chunks (blocos úteis)"
+    name: "Chunks (blocos úteis)"
   },
   {
     id: "reducoes_12",
-    nome: "Reduções (como eles realmente falam)"
+    name: "Reduções (como eles realmente falam)"
   },
   {
     id: "corporativo_13",
-    nome: "Termos corporativos / Tech"
+    name: "Termos corporativos / Tech"
   },
   {
     id: "social_14",
-    nome: "Pequenas interações sociais"
+    name: "Pequenas interações sociais"
   },
   {
     id: "aleatorias_15",
-    nome: "Frases aleatórias"
+    name: "Frases aleatórias"
   },
   {
     id: "termos_corporativos_16",
-    nome: "Termos Corporativos"
+    name: "Termos Corporativos"
   },
+
+//! ALTEREI TODOS NOMES POR NAME PARA FICAR IGUAL AO JSON, VERIFICAR SE VAI DAR PROBLEMA EM ALGUM LUGAR DO CÓDIGO, SE DER PROBLEMA VER SE É MELHOR TROCAR TODOS PARA NAME OU TODOS PARA NOME, MAS O IDEAL É FICAR IGUAL AO JSON PARA EVITAR CONFUSÃO
+
   // {
   //   id: "no_restaurante_9",
-  //   nome: "Restaurante"
+  //   name: "Restaurante"
   // },
   // {
   //   id: "hotel_10",
-  //   nome: "Hotel"
+  //   name: "Hotel"
   // },
   // {
   //   id: "no_transporte_11",
-  //   nome: "Transporte"
+  //   name: "Transporte"
   // },
   // {
   //   id: "emergencias_12",
-  //   nome: "Emergências"
+  //   name: "Emergências"
   // },
   // {
   //   id: "pequenas_conversas_13",
-  //   nome: "Small talk (conversas rápidas)"
+  //   name: "Small talk (conversas rápidas)"
   // },
    // {
   //   id: "perguntas_comuns_14",
-  //   nome: "Perguntas comuns"
+  //   name: "Perguntas comuns"
   // },
   
 ];

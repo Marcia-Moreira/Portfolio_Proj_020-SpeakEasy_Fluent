@@ -100,7 +100,7 @@ speakeasy-fluent/
 ## 📝 Como criar suas próprias frases (agora via JSON)
 
 # frase.idioma_alvo
-# frase.idioma_nativo
+# frase.idioma_nativo native_text
 
 
 ## 🤝 Como contribuir (para o futuro)

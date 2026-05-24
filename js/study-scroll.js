@@ -25,22 +25,22 @@ async function carregarLista() {
     return;
   }
   listaAtual = await getListaById(id);
-  if (!listaAtual || !listaAtual.frases) {
+  if (!listaAtual || !listaAtual.phrases) {
     container.innerHTML = "<p>Lista vazia.</p>";
     return;
   }
-  titulo.innerText = listaAtual.nome;
+  titulo.innerText = listaAtual.name;
   render();
 }
 
 function render() {
   container.innerHTML = "";
-  listaAtual.frases.forEach(frase => {
+  listaAtual.phrases.forEach(frase => {
     const div = document.createElement("div");
     div.classList.add("scroll-item");
     div.innerHTML = `
-      <div class="alvo">${frase.idioma_alvo}</div>
-      ${togglePt.checked ? `<div class="nativo">${frase.idioma_nativo}</div>` : ""}
+      <div class="alvo">${frase.target_text}</div>
+      ${togglePt.checked ? `<div class="nativo">${frase.native_text}</div>` : ""}
     `;
     container.appendChild(div);
   });

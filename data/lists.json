@@ -1,14 +1,272 @@
 {
     "lists": [
         {
-        "id": "about_me_1",
-        "type": "list",
-        "name": "About Me",
-        "category": "daily_life",
-        "phrases": [
-            { "id": "about_me_1_f1", "target_text": "I'm from Brazil", "native_text": "Sou do Brasil" },
-            { "id": "about_me_1_f2", "target_text": "I'm 30 years old", "native_text": "Tenho trinta anos" }
-        ]
+            "id": "about_me_1",
+            "type": "list",
+            "name": "About Me",
+            "category": "daily_life",
+            "phrases": [
+                { "id": "about_me_1_f1", "target_text": "I'm from Brazil", "native_text": "Sou do Brasil" },
+                { "id": "about_me_1_f2", "target_text": "I live in São Paulo", "native_text": "Moro em São Paulo" },
+                { "id": "about_me_1_f3", "target_text": "I'm originally from Rio", "native_text": "Sou originalmente do Rio" },
+                { "id": "about_me_1_f4", "target_text": "I'm a web developer", "native_text": "Sou desenvolvedora web" },
+                { "id": "about_me_1_f5", "target_text": "I've been working with front-end", "native_text": "Trabalho com front-end" },
+                { "id": "about_me_1_f6", "target_text": "I've been coming here for years", "native_text": "Venho aqui há anos" },
+                { "id": "about_me_1_f7", "target_text": "It's my fourth time here", "native_text": "É minha quarta vez aqui" },
+                { "id": "about_me_1_f8", "target_text": "I'm here for a tech conference", "native_text": "Estou aqui para uma conferência de tecnologia" },
+                { "id": "about_me_1_f9", "target_text": "I grew up in the countryside", "native_text": "Cresci no interior" },
+                { "id": "about_me_1_f10", "target_text": "I've been here for about three years", "native_text": "Estou aqui há uns três anos" },
+                { "id": "about_me_1_f11", "target_text": "I'm still learning the language", "native_text": "Ainda estou aprendendo o idioma" },
+                { "id": "about_me_1_f12", "target_text": "I work remotely", "native_text": "Trabalho remoto" }
+            ]
+        },
+        {
+            "id": "coffee_shop_2",
+            "type": "list",
+            "name": "Coffee Shop",
+            "category": "food_and_drinks",
+            "phrases": [
+                { "id": "coffee_shop_2_f1", "target_text": "Can I get a black coffee?", "native_text": "Posso pedir um café preto?" },
+                { "id": "coffee_shop_2_f2", "target_text": "No milk, no sugar", "native_text": "Sem leite, sem açúcar" },
+                { "id": "coffee_shop_2_f3", "target_text": "Just black", "native_text": "Só puro" },
+                { "id": "coffee_shop_2_f4", "target_text": "Anything else?", "native_text": "Mais alguma coisa?" },
+                { "id": "coffee_shop_2_f5", "target_text": "That's it", "native_text": "É só isso" },
+                { "id": "coffee_shop_2_f6", "target_text": "For here or to go?", "native_text": "Aqui ou para viagem?" },
+                { "id": "coffee_shop_2_f7", "target_text": "To go, please", "native_text": "Para viagem, por favor" },
+                { "id": "coffee_shop_2_f8", "target_text": "We'll call your name", "native_text": "Vamos chamar seu nome" },
+                { "id": "coffee_shop_2_f9", "target_text": "Can I have a cup of tea?", "native_text": "Me vê um chá?" },
+                { "id": "coffee_shop_2_f10", "target_text": "What's the Wi-Fi password?", "native_text": "Qual a senha do Wi-Fi?" },
+                { "id": "coffee_shop_2_f11", "target_text": "Can I charge my phone here?", "native_text": "Posso carregar meu celular aqui?" },
+                { "id": "coffee_shop_2_f12", "target_text": "Is the bathroom for customers only?", "native_text": "O banheiro é só pra cliente?" }
+            ]
+        },
+        {
+            "id": "on_the_street_3",
+            "type": "list",
+            "name": "On The Street",
+            "category": "daily_life",
+            "phrases": [
+                { "id": "on_the_street_3_f1", "target_text": "Excuse me", "native_text": "Com licença" },
+                { "id": "on_the_street_3_f2", "target_text": "Is this the way to...?", "native_text": "Esse é o caminho para...?" },
+                { "id": "on_the_street_3_f3", "target_text": "How far is it?", "native_text": "É longe?" },
+                { "id": "on_the_street_3_f4", "target_text": "Just around the corner", "native_text": "Logo ali na esquina" },
+                { "id": "on_the_street_3_f5", "target_text": "Go straight", "native_text": "Siga reto" },
+                { "id": "on_the_street_3_f6", "target_text": "Turn left/right", "native_text": "Vire esquerda/direita" },
+                { "id": "on_the_street_3_f7", "target_text": "Is this seat taken?", "native_text": "Esse lugar está ocupado?" },
+                { "id": "on_the_street_3_f8", "target_text": "Do you know what time it is?", "native_text": "Você tem horas?" },
+                { "id": "on_the_street_3_f9", "target_text": "Can you help me out real quick?", "native_text": "Pode me ajudar rapidão?" },
+                { "id": "on_the_street_3_f10", "target_text": "I think I'm lost", "native_text": "Acho que me perdi" }
+            ]
+        },
+        {
+            "id": "reactions_4",
+            "type": "list",
+            "name": "Reactions And Responses",
+            "category": "conversation",
+            "phrases": [
+                { "id": "reactions_4_f1", "target_text": "Got it", "native_text": "Entendi" },
+                { "id": "reactions_4_f2", "target_text": "Makes sense", "native_text": "Faz sentido" },
+                { "id": "reactions_4_f3", "target_text": "No worries", "native_text": "Sem problema" },
+                { "id": "reactions_4_f4", "target_text": "All good", "native_text": "Tudo certo" },
+                { "id": "reactions_4_f5", "target_text": "My bad", "native_text": "Foi mal" },
+                { "id": "reactions_4_f6", "target_text": "Fair enough", "native_text": "Justo" },
+                { "id": "reactions_4_f7", "target_text": "Sounds good", "native_text": "Parece bom / combinado" },
+                { "id": "reactions_4_f8", "target_text": "You're kidding, right?", "native_text": "Tá brincando, né?" },
+                { "id": "reactions_4_f9", "target_text": "That's wild", "native_text": "Que loucura" },
+                { "id": "reactions_4_f10", "target_text": "I feel you", "native_text": "Te entendo" },
+                { "id": "reactions_4_f11", "target_text": "Same here", "native_text": "Por aqui também" },
+                { "id": "reactions_4_f12", "target_text": "Tell me about it", "native_text": "Nem me fale" }
+            ]
+        },
+        {
+            "id": "career_networking_5",
+            "type": "list",
+            "name": "Career And Networking",
+            "category": "work",
+            "phrases": [
+                { "id": "career_networking_5_f1", "target_text": "What do you do?", "native_text": "O que você faz?" },
+                { "id": "career_networking_5_f2", "target_text": "I work in tech", "native_text": "Trabalho com tecnologia" },
+                { "id": "career_networking_5_f3", "target_text": "I'm into web development", "native_text": "Trabalho com desenvolvimento web" },
+                { "id": "career_networking_5_f4", "target_text": "What are you working on?", "native_text": "No que você está trabalhando?" },
+                { "id": "career_networking_5_f5", "target_text": "That's interesting", "native_text": "Interessante" },
+                { "id": "career_networking_5_f6", "target_text": "I'm between jobs right now", "native_text": "Tô desempregada no momento" },
+                { "id": "career_networking_5_f7", "target_text": "I just got promoted", "native_text": "Acabei de ser promovida" },
+                { "id": "career_networking_5_f8", "target_text": "I'm on a tight deadline", "native_text": "Tô com prazo apertado" },
+                { "id": "career_networking_5_f9", "target_text": "Let's circle back on that", "native_text": "Depois a gente volta nisso" },
+                { "id": "career_networking_5_f10", "target_text": "I'll shoot you an email", "native_text": "Te mando um e-mail" }
+            ]
+        },
+        {
+            "id": "airport_6",
+            "type": "list",
+            "name": "Airport / Airplane",
+            "category": "travel",
+            "phrases": [
+                { "id": "airport_6_f1", "target_text": "I have a lactose-free meal", "native_text": "Tenho refeição sem lactose" },
+                { "id": "airport_6_f2", "target_text": "I requested a special meal", "native_text": "Pedi uma refeição especial" },
+                { "id": "airport_6_f3", "target_text": "Do you have anything without dairy?", "native_text": "Tem algo sem leite?" },
+                { "id": "airport_6_f4", "target_text": "Window or aisle?", "native_text": "Janela ou corredor?" },
+                { "id": "airport_6_f5", "target_text": "Carry-on or checked bag?", "native_text": "Bagagem de mão ou despachada?" },
+                { "id": "airport_6_f6", "target_text": "I need to check this bag", "native_text": "Preciso despachar essa mala" },
+                { "id": "airport_6_f7", "target_text": "Is my flight on time?", "native_text": "Meu voo está no horário?" },
+                { "id": "airport_6_f8", "target_text": "Where's the boarding gate?", "native_text": "Onde é o portão de embarque?" },
+                { "id": "airport_6_f9", "target_text": "I have a connecting flight", "native_text": "Tenho uma conexão" }
+            ]
+        },
+        {
+            "id": "market_7",
+            "type": "list",
+            "name": "Market",
+            "category": "daily_life",
+            "phrases": [
+                { "id": "market_7_f1", "target_text": "Do you have this without dairy?", "native_text": "Tem isso sem leite?" },
+                { "id": "market_7_f2", "target_text": "Is this gluten-free?", "native_text": "Isso é sem glúten?" },
+                { "id": "market_7_f3", "target_text": "Where can I find...?", "native_text": "Onde encontro...?" },
+                { "id": "market_7_f4", "target_text": "It's over there", "native_text": "Está ali" },
+                { "id": "market_7_f5", "target_text": "Where's the dairy aisle?", "native_text": "Onde fica o corredor de laticínios?" },
+                { "id": "market_7_f6", "target_text": "Can I get a rain check?", "native_text": "Posso levar depois com o mesmo preço?" },
+                { "id": "market_7_f7", "target_text": "I forgot my reusable bag", "native_text": "Esqueci minha sacola retornável" }
+            ]
+        },
+        {
+            "id": "shopping_8",
+            "type": "list",
+            "name": "Shopping",
+            "category": "daily_life",
+            "phrases": [
+                { "id": "shopping_8_f1", "target_text": "How much is this?", "native_text": "Quanto custa?" },
+                { "id": "shopping_8_f2", "target_text": "Do you take card?", "native_text": "Aceitam cartão?" },
+                { "id": "shopping_8_f3", "target_text": "Do you want a bag?", "native_text": "Quer sacola?" },
+                { "id": "shopping_8_f4", "target_text": "You're all set", "native_text": "Tudo certo / finalizado" },
+                { "id": "shopping_8_f5", "target_text": "I'm just browsing, thanks", "native_text": "Só tô olhando, valeu" },
+                { "id": "shopping_8_f6", "target_text": "Can I get a gift receipt?", "native_text": "Dá pra tirar notinha de presente?" },
+                { "id": "shopping_8_f7", "target_text": "This is a bit pricey", "native_text": "Isso tá meio caro" }
+            ]
+        },
+        {
+            "id": "event_9",
+            "type": "list",
+            "name": "Tech Event",
+            "category": "events",
+            "phrases": [
+                { "id": "event_9_f1", "target_text": "Can I grab one?", "native_text": "Posso pegar um?" },
+                { "id": "event_9_f2", "target_text": "Is this free?", "native_text": "Isso é de graça?" },
+                { "id": "event_9_f3", "target_text": "Can I scan my badge?", "native_text": "Posso escanear meu crachá?" },
+                { "id": "event_9_f4", "target_text": "What do I need to do?", "native_text": "O que preciso fazer?" },
+                { "id": "event_9_f5", "target_text": "How does it work?", "native_text": "Como funciona?" },
+                { "id": "event_9_f6", "target_text": "We're doing a giveaway", "native_text": "Estamos fazendo um sorteio" },
+                { "id": "event_9_f7", "target_text": "What's the schedule for today?", "native_text": "Qual é a programação de hoje?" },
+                { "id": "event_9_f8", "target_text": "Do you have a map of the venue?", "native_text": "Tem um mapa do local?" },
+                { "id": "event_9_f9", "target_text": "Where's the registration desk?", "native_text": "Onde fica o credenciamento?" }
+            ]
+        },
+        {
+            "id": "lactose_10",
+            "type": "list",
+            "name": "Lactose / Restrictions",
+            "category": "food",
+            "phrases": [
+                { "id": "lactose_10_f1", "target_text": "I'm lactose intolerant", "native_text": "Sou intolerante à lactose" },
+                { "id": "lactose_10_f2", "target_text": "No dairy, please", "native_text": "Sem leite, por favor" },
+                { "id": "lactose_10_f3", "target_text": "Does this have milk?", "native_text": "Isso tem leite?" },
+                { "id": "lactose_10_f4", "target_text": "I'll have the vegan option", "native_text": "Vou querer a opção vegana" },
+                { "id": "lactose_10_f5", "target_text": "Is this made with butter?", "native_text": "Isso é feito com manteiga?" },
+                { "id": "lactose_10_f6", "target_text": "I can't do dairy at all", "native_text": "Não posso comer leite de jeito nenhum" }
+            ]
+        },
+        {
+            "id": "chunks_11",
+            "type": "list",
+            "name": "Chunks",
+            "category": "spoken_english",
+            "phrases": [
+                { "id": "chunks_11_f1", "target_text": "I'll take that", "native_text": "Vou querer isso" },
+                { "id": "chunks_11_f2", "target_text": "Let me check", "native_text": "Deixa eu ver" },
+                { "id": "chunks_11_f3", "target_text": "Give me a second", "native_text": "Um segundo" },
+                { "id": "chunks_11_f4", "target_text": "Hang on", "native_text": "Espera aí" },
+                { "id": "chunks_11_f5", "target_text": "I'm good", "native_text": "Estou bem / não preciso" },
+                { "id": "chunks_11_f6", "target_text": "I'm all set", "native_text": "Já estou resolvida" },
+                { "id": "chunks_11_f7", "target_text": "Long time no see", "native_text": "Quanto tempo" },
+                { "id": "chunks_11_f8", "target_text": "Take your time", "native_text": "Fica à vontade / sem pressa" },
+                { "id": "chunks_11_f9", "target_text": "I'll be right back", "native_text": "Já volto" },
+                { "id": "chunks_11_f10", "target_text": "Don't worry about it", "native_text": "Esquece / fica tranquilo" }
+            ]
+        },
+        {
+            "id": "reductions_12",
+            "type": "list",
+            "name": "Reductions",
+            "category": "spoken_english",
+            "phrases": [
+                { "id": "reductions_12_f1", "target_text": "Gonna = going to", "native_text": "I'm gonna go → Vou ir" },
+                { "id": "reductions_12_f2", "target_text": "Wanna = want to", "native_text": "I wanna try → Quero tentar" },
+                { "id": "reductions_12_f3", "target_text": "Gotta = got to", "native_text": "I gotta go → Tenho que ir" },
+                { "id": "reductions_12_f4", "target_text": "Lemme = let me", "native_text": "Lemme see → Deixa eu ver" },
+                { "id": "reductions_12_f5", "target_text": "Kinda = kind of", "native_text": "It's kinda far → É meio longe" },
+                { "id": "reductions_12_f6", "target_text": "Outta = out of", "native_text": "I'm outta here → Vou vazar" },
+                { "id": "reductions_12_f7", "target_text": "C'mon = come on", "native_text": "C'mon man! → Qual é, cara!" }
+            ]
+        },
+        {
+            "id": "corporate_13",
+            "type": "list",
+            "name": "Corporate / Tech Terms",
+            "category": "work",
+            "phrases": [
+                { "id": "corporate_13_f1", "target_text": "Deadline", "native_text": "Prazo" },
+                { "id": "corporate_13_f2", "target_text": "Follow up", "native_text": "Acompanhar" },
+                { "id": "corporate_13_f3", "target_text": "Touch base", "native_text": "Alinhar rapidamente" },
+                { "id": "corporate_13_f4", "target_text": "Let's sync", "native_text": "Vamos alinhar" },
+                { "id": "corporate_13_f5", "target_text": "Circle back", "native_text": "Voltar ao assunto" },
+                { "id": "corporate_13_f6", "target_text": "I'm looping you in", "native_text": "Vou te incluir no loop" },
+                { "id": "corporate_13_f7", "target_text": "Let's table that for now", "native_text": "Vamos deixar isso de lado por enquanto" },
+                { "id": "corporate_13_f8", "target_text": "What's the game plan?", "native_text": "Qual o plano?" },
+                { "id": "corporate_13_f9", "target_text": "I'll take the lead on this", "native_text": "Vou ficar responsável por isso" }
+            ]
+        },
+        {
+            "id": "social_14",
+            "type": "list",
+            "name": "Social Interactions",
+            "category": "daily_life",
+            "phrases": [
+                { "id": "social_14_f1", "target_text": "Nice to meet you", "native_text": "Prazer" },
+                { "id": "social_14_f2", "target_text": "Where are you from?", "native_text": "De onde você é?" },
+                { "id": "social_14_f3", "target_text": "How do you like it here?", "native_text": "O que está achando daqui?" },
+                { "id": "social_14_f4", "target_text": "How's everything going?", "native_text": "Como vão as coisas?" },
+                { "id": "social_14_f5", "target_text": "It was great seeing you", "native_text": "Foi ótimo te ver" }
+            ]
+        },
+        {
+            "id": "random_phrases_15",
+            "type": "list",
+            "name": "Random Real-Life Phrases",
+            "category": "spoken_english",
+            "phrases": [
+                { "id": "random_phrases_15_f1", "target_text": "I'm just looking", "native_text": "Só estou olhando" },
+                { "id": "random_phrases_15_f2", "target_text": "I'll pass", "native_text": "Vou passar" },
+                { "id": "random_phrases_15_f3", "target_text": "Why not?", "native_text": "Por que não?" },
+                { "id": "random_phrases_15_f4", "target_text": "It depends", "native_text": "Depende" },
+                { "id": "random_phrases_15_f5", "target_text": "Not really", "native_text": "Não muito" },
+                { "id": "random_phrases_15_f6", "target_text": "Whatever works for you", "native_text": "Do jeito que funcionar pra você" },
+                { "id": "random_phrases_15_f7", "target_text": "I'm down for that", "native_text": "Topo sim" },
+                { "id": "random_phrases_15_f8", "target_text": "That sucks", "native_text": "Que droga" },
+                { "id": "random_phrases_15_f9", "target_text": "You gotta be kidding me", "native_text": "Não é possível" }
+            ]
+        },
+        {
+            "id": "corporate_terms_16",
+            "type": "list",
+            "name": "Corporate Terms",
+            "category": "work",
+            "phrases": [
+                { "id": "corporate_terms_16_f1", "target_text": "Let's align on this", "native_text": "Vamos alinhar isso" },
+                { "id": "corporate_terms_16_f2", "target_text": "I'll ping you later", "native_text": "Te chamo depois" },
+                { "id": "corporate_terms_16_f3", "target_text": "What's the ETA on that?", "native_text": "Qual a previsão disso?" },
+                { "id": "corporate_terms_16_f4", "target_text": "Let's move forward with this", "native_text": "Vamos pra frente com isso" },
+                { "id": "corporate_terms_16_f5", "target_text": "I need your eyes on this", "native_text": "Preciso que você dê uma olhada nisso" },
+                { "id": "corporate_terms_16_f6", "target_text": "Let's not overcomplicate it", "native_text": "Vamos não complicar" }
+            ]
         }
     ]
 }

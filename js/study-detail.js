@@ -1,6 +1,7 @@
 import { getListaById } from "./app.js";
 
 const titulo = document.getElementById("titulo-lista");
+// verificar phrases ou frases
 const container = document.getElementById("frases");
 
 function getIdFromURL() {
@@ -18,20 +19,20 @@ async function render() {
     return;
   }
 
-  titulo.innerText = lista.nome;
+  titulo.innerText = lista.name;
 
-  if (!lista.frases || lista.frases.length === 0) {
+  if (!lista.phrases || lista.phrases.length === 0) {
     container.innerHTML = "<p>Sem frases ainda.</p>";
     return;
   }
 
-  lista.frases.forEach(frase => {
+  lista.phrases.forEach(frase => {
     const div = document.createElement("div");
     div.classList.add("frase-card");
 
     div.innerHTML = `
-      <div class="frase-en">${frase.idioma_alvo}</div>
-      <div class="frase-pt">${frase.idioma_nativo}</div>
+      <div class="frase-en">${frase.target_text}</div>
+      <div class="frase-pt">${frase.native_text}</div>
     `;
 
     container.appendChild(div);

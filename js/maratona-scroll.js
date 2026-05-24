@@ -35,19 +35,19 @@ async function carregarLista(indice) {
   }
   
   listaAtual = todasListas[indice];
-  titulo.innerText = `📚 ${listaAtual.nome}  |  Maratona: ${indice + 1}/${todasListas.length}`;
+  titulo.innerText = `📚 ${listaAtual.name}  |  Maratona: ${indice + 1}/${todasListas.length}`;
   progresso.innerText = `${indice + 1}/${todasListas.length}`;
   render();
 }
 
 function render() {
   container.innerHTML = "";
-  listaAtual.frases.forEach(frase => {
+  listaAtual.phrases.forEach(frase => {
     const div = document.createElement("div");
     div.classList.add("scroll-item");
     div.innerHTML = `
-      <div class="alvo">${frase.idioma_alvo}</div>
-      ${togglePt.checked ? `<div class="nativo">${frase.idioma_nativo}</div>` : ""}
+      <div class="alvo">${frase.target_text}</div>
+      ${togglePt.checked ? `<div class="nativo">${frase.native_text}</div>` : ""}
     `;
     container.appendChild(div);
   });
