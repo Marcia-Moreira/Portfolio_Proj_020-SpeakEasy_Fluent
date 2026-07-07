@@ -92,3 +92,23 @@ export const listasPadrao = [
   // },
   
 ];
+export const seriesPadrao = [
+  {
+    id: "everybody_hates_chris_s01e01",
+    name: "S01E01 - Intro"
+  },
+  {
+    id: "sobre_mim_1",
+    name: "Sobre mim"
+  }
+];
+export const songsPadrao = [
+  {
+    id: "sobre_mim_1",
+    name: "Sobre mim"
+  },
+  {
+    id: "sobre_mim_1",
+    name: "Sobre mim"
+  },
+];

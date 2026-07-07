@@ -1,7 +1,7 @@
-import { getListaById } from "./app.js";
+import { getSerieById } from "./app.js";
 
 const titulo = document.getElementById("titulo-lista");
-// verificar phrases ou frases
+// verificar phrases ou frases ok
 const container = document.getElementById("frases");
 
 function getIdFromURL() {
@@ -12,21 +12,21 @@ function getIdFromURL() {
 async function render() {
   const id = getIdFromURL();
 
-  const lista = await getListaById(id);
+  const serie = await getSerieById(id);
 
-  if (!lista) {
+  if (!serie) {
     titulo.innerText = "Lista não encontrada";
     return;
   }
 
-  titulo.innerText = lista.name;
+  titulo.innerText = serie.name;
 
-  if (!lista.phrases || lista.phrases.length === 0) {
+  if (!serie.phrases || serie.phrases.length === 0) {
     container.innerHTML = "<p>Sem frases ainda.</p>";
     return;
   }
 
-  lista.phrases.forEach(frase => {
+  serie.phrases.forEach(frase => {
     const div = document.createElement("div");
     div.classList.add("frase-card");
 

@@ -1,4 +1,4 @@
-import { getListas } from "./app.js";
+import { getLists } from "./app.js";
 
 function getModoFromURL() {
   const params = new URLSearchParams(window.location.search);
@@ -9,7 +9,7 @@ const modo = getModoFromURL();
 const container = document.getElementById("listas");
 
 async function renderListas() {
-  const listas = await getListas();
+  const listas = await getLists();
 
   listas.forEach(lista => {
     const card = document.createElement("div");

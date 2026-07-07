@@ -1,4 +1,4 @@
-import { getListas } from "./app.js";
+import { getSeries } from "./app.js";
 
 function getModoFromURL() {
   const params = new URLSearchParams(window.location.search);
@@ -8,14 +8,14 @@ function getModoFromURL() {
 const modo = getModoFromURL();
 const container = document.getElementById("listas");
 
-async function renderListas() {
-  const listas = await getListas();
+async function renderSeries() {
+  const series = await getSeries();
 
-  listas.forEach(lista => {
+  series.forEach(serie => {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    card.innerHTML = `<strong>${lista.name}</strong>`;
+    card.innerHTML = `<strong>${serie.name}</strong>`;
 
     // card.addEventListener("click", () => {
     //   window.location.href = `study-detail.html?id=${lista.id}`;
@@ -25,19 +25,26 @@ async function renderListas() {
 
     card.addEventListener("click", () => {
       if (modo === "audio") {
-        window.location.href = `study-speak.html?id=${lista.id}`;
+        window.location.href = `study-speak.html?id=${serie.id}`;
       } else {
         // default = scroll
-        window.location.href = `study-scroll.html?id=${lista.id}`;
+        window.location.href = `study-scroll.html?id=${serie.id}`;
       }
     });
 
 
     container.appendChild(card);
   });
+
+  //* TESTES PARA VER SE ESTÁ PEGANDO O ID DA URL CORRETAMENTE:
+// console.log("URL:", window.location.href);
+// console.log("ID:", getIdFromURL());
+
+// console.log("SERIE COMPLETA:", JSON.stringify(serie, null, 2));
+console.log(serie)
 }
 
-renderListas();
+renderSeries();
 
 // window.location.href = `study-detail.html?id=${lista.id}`;
 // window.location.href = `study-speak.html?id=${lista.id}`;
@@ -48,3 +55,4 @@ if (btnMaratona) {
     window.location.href = "maratona-scroll.html";
   });
 }
+

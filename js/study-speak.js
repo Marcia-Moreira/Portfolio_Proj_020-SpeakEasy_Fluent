@@ -1,4 +1,6 @@
-import { getListaById } from "./app.js";
+// import { getListById } from "./app.js";
+// LINHA 1 - SUBSTITUA:
+import { getAnyContentById, getContentIdFromURL, getContentTypeFromURL } from "./app.js";
 
 const titulo = document.getElementById("titulo-lista");
 const fraseAtualDiv = document.getElementById("frase-atual");
@@ -15,10 +17,10 @@ const btnRepeat = document.getElementById("repeat");
 const toggleTraducao = document.getElementById("toggle-traducao");
 
 //* =====================================================
-function getIdFromURL() {
-  const params = new URLSearchParams(window.location.search);
-  return params.get("id");
-}
+// function getIdFromURL() {
+//   const params = new URLSearchParams(window.location.search);
+//   return params.get("id");
+// }
 
 let listaAtual = null;
 let index = 0;
@@ -28,22 +30,31 @@ let audioAtivo = false;  // 🔥 NOVO: controle para não matar o áudio
 //* =====================================================
 //* FUNÇÃO CARREGAR LISTA
 //* =====================================================
+// SUBSTITUA a função carregarLista:
 async function carregarLista() {
-  const id = getIdFromURL();
-
+  const id = getContentIdFromURL();
+  const type = getContentTypeFromURL();
+  
   if (!id) {
-    fraseAtualDiv.innerText = "Escolha uma lista primeiro.";
+    fraseAtualDiv.innerText = "Escolha um conteúdo primeiro.";
     return;
   }
-
-  listaAtual = await getListaById(id);
-
+  
+  listaAtual = await getAnyContentById(id);
+  
   if (!listaAtual || !listaAtual.phrases) {
-    fraseAtualDiv.innerText = "Lista vazia.";
+    fraseAtualDiv.innerText = "Conteúdo vazio.";
     return;
   }
-
-  titulo.innerText = listaAtual.name;
+  
+  // Título diferente conforme o tipo
+  if (listaAtual.contentType === "series") {
+    titulo.innerText = `📺 ${listaAtual.series_name} - ${listaAtual.name}`;
+  } else if (listaAtual.contentType === "song") {
+    titulo.innerText = `🎵 ${listaAtual.artist} - ${listaAtual.song_name}`;
+  } else {
+    titulo.innerText = `📚 ${listaAtual.name}`;
+  }
 }
 
 //* =====================================================

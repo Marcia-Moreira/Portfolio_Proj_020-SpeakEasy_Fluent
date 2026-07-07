@@ -1,4 +1,4 @@
-import { getListas } from "./app.js";
+import { getLists } from "./app.js";
 
 const container = document.getElementById("scroll-content");
 const speedInput = document.getElementById("speed");
@@ -16,7 +16,7 @@ let animacaoIniciada = false;
 
 // =====================================================
 async function carregarTodasListas() {
-  todasListas = await getListas();
+  todasListas = await getLists();
   if (!todasListas.length) {
     container.innerHTML = "<p>Nenhuma lista encontrada.</p>";
     return;
@@ -56,25 +56,61 @@ function render() {
   container.classList.remove("scroll-active");
   container.style.animation = "none";
   container.style.transform = "translateY(100%)";
+
+  //* Testes para verificar estrutura da lista e frases
+  // console.log("URL:", window.location.href);
+  // console.log("ID:", getIdFromURL());
+  // console.log("SERIES COMPLETA:", await getSeries());
+  // console.log("SERIE ENCONTRADA:", serie);
+  // console.log("PHRASES:", serie?.phrases);
 }
 
+
 function atualizarVelocidade() {
+  if (!listaAtual) return;
+  
   const speed = Number(speedInput.value);
-  let duration = 40 - (speed * 0.58);
-  duration = Math.max(2, Math.min(50, duration));
+  
+  // 🔥 VELOCIDADE BASE: 30 caracteres por segundo
+  // speed 1 = 0.5x (mais lento) | speed 100 = 2x (mais rápido)
+  const multiplicador = 0.5 + (speed / 100);
+  // speed 1 = 0.5 | speed 100 = 1.5
+  
+  // Calcula tempo total baseado nos caracteres de TODAS as frases
+  let totalCaracteres = 0;
+  listaAtual.phrases.forEach(frase => {
+    totalCaracteres += frase.target_text.length;
+  });
+  
+  // Tempo base = total caracteres / 30 caracteres por segundo
+  let tempoBase = totalCaracteres / 30;
+  
+  // Aplica o multiplicador da velocidade
+  let duration = tempoBase / multiplicador;
+  
+  // Limites: mínimo 2 segundos, máximo 90 segundos
+  duration = Math.max(2, Math.min(90, duration));
+  
   container.style.animationDuration = `${duration}s`;
 }
 
 function play() {
-  if (!listaAtual) return;
-  
   if (!animacaoIniciada) {
     const speed = Number(speedInput.value);
-    let duration = 40 - (speed * 0.58);
-    duration = Math.max(2, Math.min(50, duration));
+    
+    // Mesmo cálculo da atualizarVelocidade
+    const multiplicador = 0.5 + (speed / 100);
+    
+    let totalCaracteres = 0;
+    listaAtual.phrases.forEach(frase => {
+      totalCaracteres += frase.target_text.length;
+    });
+    
+    let tempoBase = totalCaracteres / 30;
+    let duration = tempoBase / multiplicador;
+    duration = Math.max(2, Math.min(90, duration));
 
     container.style.animation = "none";
-    container.style.transform = "translateY(100%)";
     container.offsetHeight;
     container.style.animation = `scrollUp ${duration}s linear infinite`;
     container.classList.add("scroll-active");
