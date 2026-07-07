@@ -30,10 +30,12 @@
   <h2 id="titulo-lista"></h2>
 
   <!-- LINHA 2 -->
+  <!-- CONTROLES DO SCROLLER -->
   <div class="controls-top">
     <label>
       Velocidade:
       <input type="range" id="speed" min="1" max="100" value="50">
+      <span id="velocidade-display">50%</span>
     </label>
 
     <label>
@@ -49,9 +51,10 @@
     <button id="resetScroll">🔄 Reset</button>
   </div>
 
-  <!-- SCROLL -->
+  <!-- CONTAINER SCROLL -->
   <div class="scroll-container">
     <div id="scroll-content" class="scroll-content"></div>
+    <!-- As frases serão inseridas aqui pelo JS -->
   </div>
 
 </main>

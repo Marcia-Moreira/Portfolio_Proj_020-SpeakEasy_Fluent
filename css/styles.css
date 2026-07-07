@@ -462,7 +462,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background: #f5f5f5; /* fundo da página */
+  background: #f5f5f5; /* fundo da página toda*/
 }
 
 /** título da lista */
@@ -490,19 +490,23 @@ button:hover {
   margin: 10px 0;
 }
 
+/* ═══════════════════════════════════════════════════════════════
+NOVO CSS - Controle de scroll suave
+═══════════════════════════════════════════════════════════════ */
 /** container preto do scroll - FUNDO PRETO GARANTIDO */
 .scroll-container {
   height: 60vh;
   /* !Alterado */
   overflow: hidden;
   /* largura tela preta: */
-  width: 90%;
+  width: 90%;  /* tive que colocar isso para o fundo preto aparecer e as letras também!!!*/
   /*? overflow: hidden; */
   position: relative;
   background: #111 !important;
   border-radius: 5px;
-  /*? border: 2px solid #333;  */
-  /* borda pra visualizar limite */
+  /* 🔥 ADICIONE ESSA LINHA para centralizar a primeira frase */
+  padding-top: 20vh; 
+  /* Ajuste: 30vh = 30% da tela */
 }
 
 /** conteúdo que rola = frases */
@@ -510,23 +514,28 @@ button:hover {
   /* position: absolute; */
   /* top: 0; */
   width: 100%;
+  height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+  /* gap: 20px; */
+  /* padding: 20px; */
+  padding: 0;
+  gap: 0;
+  transform: none !important; /* Remove animação antiga */
   /*! ⚠️ NÃO colocar animation aqui*/
   /* !Alterado */
   /* 🔥 COMENTA OU REMOVE ESSA LINHA */
-  transform: translateY(-100%);
+  /* transform: translateY(-100%); */
   /* transform: translateY(0); */
   /* 🔥 ESTADO INICIAL: frutas NO RODAPÉ (visíveis) */
   /* transform: translateY(calc(100% - 100px)); */
 }
 
-/** Quando ativar o play: */
-.scroll-active {
+/**! Quando ativar o play: */
+/* .scroll-active {
   animation: scrollUp linear infinite;
-}
+} */
 
 /** se quiser resetar sem animação */
 .scroll-reset {
@@ -536,7 +545,16 @@ button:hover {
 /** item da frase */
 .scroll-item {
   text-align: center;
-  padding: 15px 0; /* mais espaçamento */
+  /* padding: 15px 0; */
+  padding: 5px 20px;
+  box-sizing: border-box;
+  position: absolute; /* Para controle de posição via JS */
+  left: 0;
+  right: 0;
+  /* 🔥 ESSA LINHA FAZ O DESLIZE SUAVE */
+  transition: transform 0.4s ease-in-out;
+
+  will-change: transform; /* Otimização de performance */
 }
 
 /* inglês - BRANCO GARANTIDO */
@@ -544,24 +562,26 @@ button:hover {
   font-size: 24px;
   font-weight: bold;
   color: white !important;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
+  margin: 0;
 }
 
 /* português - CINZA CLARO GARANTIDO*/
 .scroll-item .nativo {
   font-size: 18px;
   color: #cccccc !important;
+  margin: 0;
 }
 
-/*? animação rever pois está vazando pro teto*/
-@keyframes scrollUp {
+/*! animação rever pois está vazando pro teto*/
+/* @keyframes scrollUp {
   0% {
     transform: translateY(100%);
   }
   100% {
     transform: translateY(-100%);
   }
-}
+} */
 
 /*? FORÇA CORES DO SCROLL */
 /* .scroll-container * {
@@ -638,7 +658,7 @@ button:hover {
 /*! palavra do json listas verificar divergencia com classe */
 
 /* ==================================================
-   STUDY AUDIO PAGE
+STUDY AUDIO PAGE
 ================================================== */
 
 /* .study-audio {
@@ -660,6 +680,30 @@ button:hover {
 
 /* rever os de cima */
 
+/* ═══════════════════════════════════════════════════════════════
+   DESTAQUE SIMPLES - FRASE DO CENTRO
+   ═══════════════════════════════════════════════════════════════ */
+
+/* 🔥 FRASES LONGE DO CENTRO (PADRÃO) */
+.scroll-item {
+  transition: all 0.3s ease;
+  opacity: 0.7;        /* Cinza escuro */
+  transform: scale(0.9);
+}
+
+/* 🔥 FRASE ABAIXO DO CENTRO (PRÓXIMA) */
+.scroll-item.destaque {
+  opacity: 0.7;
+  transform: scale(1.2);
+  text-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+}
+
+/* 🔥 FRASE NO CENTRO (DESTAQUE MÁXIMO) */
+.scroll-item.proximo {
+  opacity: 1;          /* BRANCO */
+  transform: scale(0.95);
+  text-shadow: 0 0 40px rgba(255, 215, 0, 0.8);
+}
 /* ==================================================
   STUDY AUDIO PAGE - PADRÃO SCROLL
 ================================================== */
@@ -848,15 +892,69 @@ button:hover {
   }
 }
 
-/* 
-  !CRIAR CSS PARA VOLTAR AO TOPO DA PÁGINA - Baixar icon seta pra cima
-  !e estilizar, posição direita e abaixo fora do main fixo no final da página.
-*/
+  /* !CRIAR CSS PARA VOLTAR AO TOPO DA PÁGINA - Baixar icon seta pra cima */
+  /* !e estilizar, posição direita e abaixo fora do main fixo no final da página. */
 
 #topo {
   scroll-behavior: smooth;
 }
 
-a.btn-topo{
+a.btn-topo {
   color: #7a7a7a;
+}
+
+/* REVER  */
+/* ═══════════════════════════════════════════════════════════════
+  AJUSTES PARA TABLET E CELULAR
+═══════════════════════════════════════════════════════════════ */
+
+/* 🔥 TABLET (telas entre 768px e 1024px) */
+@media (max-width: 1024px) {
+  .scroll-container {
+    height: 70vh; /* Mais espaço para o scroll */
+    padding-top: 20vh; /* Ajuste para centralizar */
+  }
+  
+  .scroll-item .alvo {
+    font-size: 20px !important; /* Texto um pouco menor */
+  }
+  
+  .scroll-item .nativo {
+    font-size: 16px !important;
+  }
+}
+
+/* 🔥 CELULAR (telas até 768px) */
+@media (max-width: 768px) {
+  .scroll-container {
+    height: 75vh; /* Ainda mais espaço */
+    width: 95% !important; /* Quase toda a largura */
+    padding-top: 15vh;
+    border-radius: 10px;
+  }
+  
+  .scroll-item .alvo {
+    font-size: 18px !important; /* Texto menor para caber */
+    padding: 0 10px;
+  }
+  
+  .scroll-item .nativo {
+    font-size: 14px !important;
+  }
+  
+  /* 🔥 Ajusta os botões para touch */
+  .controls-buttons button {
+    padding: 12px 20px !important;
+    font-size: 16px !important;
+    min-height: 48px; /* Tamanho mínimo para dedos */
+  }
+  
+  /* 🔥 Slider de velocidade mais fácil de tocar */
+  input[type="range"] {
+    height: 8px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    height: 24px;
+    width: 24px;
+  }
 }
