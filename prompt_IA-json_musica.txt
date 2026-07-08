@@ -1,6 +1,43 @@
+Monte um JSON no seguinte padrão para a música [NÚMERO] - [NOME DA MÚSICA] - [ARTISTA]:
+
+Padrão:
 {
     "songs": [
         {
+            "id": "[NUMERO]_[nome_da_musica]_[artista]",
+            "type": "song",
+            "song_name": "[Nome da Música]",
+            "artist": "[Artista]",
+            "category": "music",
+            "level": "beginner",
+            "album": "",
+            "year": [ANO],
+            "cover": "",
+            "youtube": "",
+            "spotify": "",
+            "phrases": [
+                {"id": "[NUMERO]_f01", "target_text": "[frase em inglês]", "native_text": "[tradução]"},
+                {"id": "[NUMERO]_f02", "target_text": "[frase em inglês]", "native_text": "[tradução]"}
+            ]
+        }
+    ]
+}
+
+REGRAS:
+1. ID da linha, frase em inglês e tradução DEVEM ficar na MESMA linha (um ao lado do outro com vírgula)
+2. NÃO repetir frases iguais
+3. Manter apenas versões únicas da letra
+4. Organizar na ordem que aparecem
+
+Letra e tradução:
+[COLE AQUI A LETRA COM TRADUÇÃO]
+
+
+
+================================================
+Exemplo do Json Real do json:
+
+{
             "id": "001_i_can_see_clearly_now_jimmy_cliff",
             "type": "song",
             "song_name": "I Can See Clearly Now",
@@ -28,27 +65,3 @@
                 {"id": "001_f12", "target_text": "Bright, bright sunshiny day, yeah", "native_text": "Brilhante, brilhante dia de sol, sim"}
             ]
         },
-        {
-            "id": "002_let_it_be_beatles",
-            "type": "song",
-            "song_name": "Let It Be",
-            "artist": "The Beatles",
-            "category": "music",
-            "level": "beginner",
-            "album": "",
-            "year": 1970,
-            "cover": "",
-            "letras": "",
-            "youtube": "",
-            "spotify": "",
-            "phrases": [
-                {
-                "id": "002_f01", "target_text": "", "native_text": ""
-                },
-                {
-                "id": "002_f02", "target_text": "", "native_text": ""
-                }
-            ]
-        }
-    ]
-}

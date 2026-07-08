@@ -359,7 +359,7 @@ button:hover {
 ================================================== */
 
 /* !layout geral da página */
-/* .study-scroll {
+/* .mode-scroll {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -367,7 +367,7 @@ button:hover {
 } */
 
 /*! título da lista */
-/* .study-scroll h2 {
+/* .mode-scroll h2 {
   text-align: center;
 } */
 
@@ -457,7 +457,7 @@ button:hover {
 ================================================== */
 /* ================================================== STUDY SCROLL PAGE (CORRIGIDO) ================================================== */
 /** layout geral da página */
-.study-scroll {
+.mode-scroll {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -466,7 +466,7 @@ button:hover {
 }
 
 /** título da lista */
-.study-scroll h2 {
+.mode-scroll h2 {
   text-align: center;
   /* !Alterado */
   margin: 0;

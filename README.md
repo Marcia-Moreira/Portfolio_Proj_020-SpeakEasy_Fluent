@@ -82,7 +82,7 @@ speakeasy-fluent/
 ├── index.html              # Tela inicial
 ├── study-list.html         # Escolha o tema
 ├── study-detail.html       # Veja as frases do tema
-├── study-scroll.html       # Modo rolagem
+├── mode-scroll.html       # Modo rolagem
 ├── study-audio.html        # Modo áudio
 ├── css/
 │   └── styles.css
@@ -90,7 +90,7 @@ speakeasy-fluent/
 │   ├── app.js              # Dados e lógica central
 │   ├── study-list.js
 │   ├── study-detail.js
-│   ├── study-scroll.js     # ★ Modo scroll (seu favorito)
+│   ├── mode-scroll.js     # ★ Modo scroll (seu favorito)
 │   └── study-audio.js
 └── data/
     └── frases.json         # Suas listas de frases

@@ -19,16 +19,16 @@ async function renderSeries() {
 
     // card.addEventListener("click", () => {
     //   window.location.href = `study-detail.html?id=${lista.id}`;
-    //   window.location.href = `study-scroll.html?id=${lista.id}`;
-    //   window.location.href = `study-speak.html?id=${lista.id}`;
+    //   window.location.href = `mode-scroll.html?id=${lista.id}`;
+    //   window.location.href = `mode-speak.html?id=${lista.id}`;
     // });
 
     card.addEventListener("click", () => {
       if (modo === "audio") {
-        window.location.href = `study-speak.html?id=${serie.id}`;
+        window.location.href = `mode-speak.html?id=${serie.id}`;
       } else {
         // default = scroll
-        window.location.href = `study-scroll.html?id=${serie.id}`;
+        window.location.href = `mode-scroll.html?id=${serie.id}`;
       }
     });
 
@@ -47,7 +47,7 @@ console.log(serie)
 renderSeries();
 
 // window.location.href = `study-detail.html?id=${lista.id}`;
-// window.location.href = `study-speak.html?id=${lista.id}`;
+// window.location.href = `mode-speak.html?id=${lista.id}`;
 
 const btnMaratona = document.getElementById("btnMaratonaScroll");
 if (btnMaratona) {

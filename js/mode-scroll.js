@@ -3,7 +3,7 @@
 
 // DEPOIS - SUBSTITUA por:
 // ═══════════════════════════════════════════════════════════════
-// STUDY-SCROLL.JS - VERSÃO COM SCROLL SUAVE (INTERPOLAÇÃO)
+// MODE-SCROLL.JS - VERSÃO COM SCROLL SUAVE (INTERPOLAÇÃO)
 // ═══════════════════════════════════════════════════════════════
 
 import { getAnyContentById, getContentIdFromURL, getContentTypeFromURL } from "./app.js";
@@ -146,6 +146,7 @@ function render() {
     } else if (distancia < ALTURA_FRASE * 2) {
       div.classList.add('proximo');
     }
+
     // ═══════════════════════════════════════════════════════════
 
     // Conteúdo da frase

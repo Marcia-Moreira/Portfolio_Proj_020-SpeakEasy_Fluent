@@ -116,6 +116,13 @@ export async function getSongById(id) {
   return songs.find(s => s.id === id);
 }
 
+// REVER:
+// export async function getSongs() {
+//     const response = await fetch("../data/songs.json");
+//     const data = await response.json();
+//     return data.songs;
+// }
+
 // TESTES PARA VER SE ESTÁ PEGANDO O ID DA URL CORRETAMENTE:
 // console.log("URL:", window.location.href);
 // console.log("ID:", getIdFromURL());
