@@ -31,12 +31,18 @@ function escolherModo(modo) {
   // };
   
   // 🔥 USA O CAMINHO COMPLETO A PARTIR DA RAIZ
+  // const paginas = {
+  //   'scroll': '/templates/mode-scroll.html',    // ← barra no início
+  //   // 'cards': '/templates/mode-speak.html',
+  //   'speak': '/templates/mode-speak.html',
+  //   'recall': '/templates/mode-recall.html',
+  //   // 'marathon': '/templates/mode-marathon.html'
+  // };
+
   const paginas = {
-    'scroll': '/templates/mode-scroll.html',    // ← barra no início
-    // 'cards': '/templates/mode-speak.html',
-    'speak': '/templates/mode-speak.html',
-    'recall': '/templates/mode-recall.html',
-    // 'marathon': '/templates/mode-marathon.html'
+    'scroll': './mode-scroll.html',
+    'speak': './mode-speak.html',
+    'recall': './mode-recall.html',
   };
 
   const paginaDestino = paginas[modo];
