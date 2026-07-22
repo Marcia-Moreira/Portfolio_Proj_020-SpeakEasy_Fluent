@@ -286,6 +286,12 @@ button:hover {
 }
 
 .study-list .card {
+  /* display: block; */
+  display: flex;
+  flex-direction: column;   /* um abaixo do outro */
+  justify-content: center;  /* centraliza na vertical */
+  align-items: center;      /* centraliza na horizontal */
+
   background: #fff;
   padding: 20px 15px;
   border-radius: 12px;
@@ -301,6 +307,16 @@ button:hover {
 .study-list .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.study-list .card strong,
+.study-list .card small {
+    /* Para pôr nome e label uma sob a outra */
+    display: block;
+}
+
+.study-list .card small {
+    color: #888;
 }
 
 /* Tablet: 3 colunas */
@@ -681,8 +697,8 @@ STUDY AUDIO PAGE
 /* rever os de cima */
 
 /* ═══════════════════════════════════════════════════════════════
-   DESTAQUE SIMPLES - FRASE DO CENTRO
-   ═══════════════════════════════════════════════════════════════ */
+DESTAQUE SIMPLES - FRASE DO CENTRO
+═══════════════════════════════════════════════════════════════ */
 
 /* 🔥 FRASES LONGE DO CENTRO (PADRÃO) */
 .scroll-item {
@@ -892,8 +908,8 @@ STUDY AUDIO PAGE
   }
 }
 
-  /* !CRIAR CSS PARA VOLTAR AO TOPO DA PÁGINA - Baixar icon seta pra cima */
-  /* !e estilizar, posição direita e abaixo fora do main fixo no final da página. */
+/* !CRIAR CSS PARA VOLTAR AO TOPO DA PÁGINA - Baixar icon seta pra cima */
+/* !e estilizar, posição direita e abaixo fora do main fixo no final da página. */
 
 #topo {
   scroll-behavior: smooth;
@@ -958,3 +974,49 @@ a.btn-topo {
     width: 24px;
   }
 }
+
+/* ============================================== */
+/* CARD DA PAGINA METODO / MODO */
+/* ============================================== */
+.modal-page{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.55);
+}
+
+.method-card{
+    width:min(420px,90vw);
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+.method-card h2{
+    text-align:center;
+    margin:0;
+}
+
+.method-card p{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.method-card button{
+    padding:14px;
+    font-size:1rem;
+    cursor:pointer;
+    border-radius:10px;
+}
+
+.secondary{
+    margin-top:15px;
+}
+
+/* Versão Telas menores */

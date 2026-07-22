@@ -4,6 +4,7 @@
             "id": "about_me_1",
             "type": "list",
             "name": "About Me",
+            "label": "Sobre Mim",
             "category": "daily_life",
             "phrases": [
                 { "id": "about_me_1_f1", "target_text": "I'm from Brazil", "native_text": "Sou do Brasil" },
@@ -24,6 +25,7 @@
             "id": "coffee_shop_2",
             "type": "list",
             "name": "Coffee Shop",
+            "label": "Cafeteria",
             "category": "food_and_drinks",
             "phrases": [
                 { "id": "coffee_shop_2_f1", "target_text": "Can I get a black coffee?", "native_text": "Posso pedir um café preto?" },
@@ -44,6 +46,7 @@
             "id": "on_the_street_3",
             "type": "list",
             "name": "On The Street",
+            "label": "Rua",
             "category": "daily_life",
             "phrases": [
                 { "id": "on_the_street_3_f1", "target_text": "Excuse me", "native_text": "Com licença" },
@@ -62,6 +65,7 @@
             "id": "reactions_4",
             "type": "list",
             "name": "Reactions And Responses",
+            "label": "Reações e Respostas",
             "category": "conversation",
             "phrases": [
                 { "id": "reactions_4_f1", "target_text": "Got it", "native_text": "Entendi" },
@@ -82,6 +86,7 @@
             "id": "career_networking_5",
             "type": "list",
             "name": "Career And Networking",
+            "label": "Carreira e Networking",
             "category": "work",
             "phrases": [
                 { "id": "career_networking_5_f1", "target_text": "What do you do?", "native_text": "O que você faz?" },
@@ -100,6 +105,7 @@
             "id": "airport_6",
             "type": "list",
             "name": "Airport / Airplane",
+            "label": "Aeroporto / Avião",
             "category": "travel",
             "phrases": [
                 { "id": "airport_6_f1", "target_text": "I have a lactose-free meal", "native_text": "Tenho refeição sem lactose" },
@@ -117,6 +123,7 @@
             "id": "market_7",
             "type": "list",
             "name": "Market",
+            "label": "Mercado",
             "category": "daily_life",
             "phrases": [
                 { "id": "market_7_f1", "target_text": "Do you have this without dairy?", "native_text": "Tem isso sem leite?" },
@@ -132,6 +139,7 @@
             "id": "shopping_8",
             "type": "list",
             "name": "Shopping",
+            "label": "Compras",
             "category": "daily_life",
             "phrases": [
                 { "id": "shopping_8_f1", "target_text": "How much is this?", "native_text": "Quanto custa?" },
@@ -147,6 +155,7 @@
             "id": "event_9",
             "type": "list",
             "name": "Tech Event",
+            "label": "Evento de Tecnologia",
             "category": "events",
             "phrases": [
                 { "id": "event_9_f1", "target_text": "Can I grab one?", "native_text": "Posso pegar um?" },
@@ -164,6 +173,7 @@
             "id": "lactose_10",
             "type": "list",
             "name": "Lactose / Restrictions",
+            "label": "Intolerância à Lactose / Restrições",
             "category": "food",
             "phrases": [
                 { "id": "lactose_10_f1", "target_text": "I'm lactose intolerant", "native_text": "Sou intolerante à lactose" },
@@ -178,6 +188,7 @@
             "id": "chunks_11",
             "type": "list",
             "name": "Chunks",
+            "label": "Trechos Comuns",
             "category": "spoken_english",
             "phrases": [
                 { "id": "chunks_11_f1", "target_text": "I'll take that", "native_text": "Vou querer isso" },
@@ -196,6 +207,7 @@
             "id": "reductions_12",
             "type": "list",
             "name": "Reductions",
+            "label": "Reduções Comuns",
             "category": "spoken_english",
             "phrases": [
                 { "id": "reductions_12_f1", "target_text": "Gonna = going to", "native_text": "I'm gonna go → Vou ir" },
@@ -211,6 +223,7 @@
             "id": "corporate_13",
             "type": "list",
             "name": "Corporate / Tech Terms",
+            "label": "Termos Corporativos / de Tecnologia",
             "category": "work",
             "phrases": [
                 { "id": "corporate_13_f1", "target_text": "Deadline", "native_text": "Prazo" },
@@ -228,6 +241,7 @@
             "id": "social_14",
             "type": "list",
             "name": "Social Interactions",
+            "label": "Interações Sociais",
             "category": "daily_life",
             "phrases": [
                 { "id": "social_14_f1", "target_text": "Nice to meet you", "native_text": "Prazer" },
@@ -241,6 +255,7 @@
             "id": "random_phrases_15",
             "type": "list",
             "name": "Random Real-Life Phrases",
+            "label": "Frases do Dia a Dia Aleatórias",
             "category": "spoken_english",
             "phrases": [
                 { "id": "random_phrases_15_f1", "target_text": "I'm just looking", "native_text": "Só estou olhando" },
@@ -258,6 +273,7 @@
             "id": "corporate_terms_16",
             "type": "list",
             "name": "Corporate Terms",
+            "label": "Termos Corporativos",
             "category": "work",
             "phrases": [
                 { "id": "corporate_terms_16_f1", "target_text": "Let's align on this", "native_text": "Vamos alinhar isso" },

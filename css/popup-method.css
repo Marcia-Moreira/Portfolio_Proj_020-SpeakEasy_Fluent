@@ -1,0 +1,110 @@
+/* ═══════════════════════════════════════════════════════════════
+  POPUP-METHOD.CSS - POPUP DE ESCOLHA
+   ═══════════════════════════════════════════════════════════════ */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.popup-container {
+  background: #1e1e1e;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+  border: 1px solid #333;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.popup-header h2 {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 28px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.btn-close:hover {
+  color: white;
+}
+
+/* 🔥 TUDO NO CSS - SEM INLINE */
+.popup-subtitle {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.popup-subtitle strong {
+  color: #f0c040;
+}
+
+.modos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modo-card {
+  background: #2a2a2a;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  text-align: left;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+}
+
+.modo-card:hover {
+  background: #333;
+  border-color: #f0c040;
+  transform: scale(1.02);
+}
+
+.modo-icon {
+  font-size: 32px;
+}
+
+.modo-nome {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modo-desc {
+  font-size: 14px;
+  color: #999;
+  margin-left: auto;
+}

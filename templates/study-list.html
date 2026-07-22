@@ -1,3 +1,4 @@
+<!-- Página LISTA GERAL Temas Criados pelos Usuários -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,6 +7,7 @@
   <title>Lista Geral</title>
 
   <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/marathon.css" />
 </head>
 
 <body id="topo">
@@ -29,9 +31,12 @@
   </div>
   <!-- 🔥 BOTÃO DA MARATONA -->
   <div class="maratona-botao">
-    <button id="btnMaratonaScroll">🏁 Iniciar Maratona Scroll</button>
+    <button onclick="abrirPopupMaratona()" id="btnMaratonaScroll">🏁 Iniciar Maratona </button>
   </div>
   <div id="listas" class="grid"></div>
+
+  <!-- Seleção Method -->
+  <div id="popup-method-container"></div>
 </main>
 
 <!-- Link para voltar ao topo - verificar icon seta pra cima-->

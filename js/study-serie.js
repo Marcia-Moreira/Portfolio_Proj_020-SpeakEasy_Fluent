@@ -23,14 +23,33 @@ async function renderSeries() {
     //   window.location.href = `mode-speak.html?id=${lista.id}`;
     // });
 
-    card.addEventListener("click", () => {
-      if (modo === "audio") {
-        window.location.href = `mode-speak.html?id=${serie.id}`;
-      } else {
-        // default = scroll
-        window.location.href = `mode-scroll.html?id=${serie.id}`;
-      }
+    // card.addEventListener("click", () => {
+    //   if (modo === "audio") {
+    //     window.location.href = `mode-speak.html?id=${serie.id}`;
+    //   } else {
+    //     // default = scroll
+    //     window.location.href = `mode-scroll.html?id=${serie.id}`;
+    //   }
+    // });
+
+    // 🔥 NOVO: Abre o popup em vez de ir direto pro modo
+    card.addEventListener('click', function() {
+      const id = serie.id;
+      const type = serie.type || 'serie';
+      const name = serie.series_name || serie.name || 'Item';
+      
+      window.location.href = `popup-method.html?id=${id}&type=${type}&name=${encodeURIComponent(name)}`;
     });
+
+    // // 🔥 SUBSTITUA POR ISSO: Para abrir Popup
+    // card.addEventListener('click', function() {
+    //   const id = item.id;                    // ID do item
+    //   const type = item.type || 'serie';      // Tipo (song, series, list)
+    //   const name = item.song_name || item.series_name || item.name || 'Item';
+      
+    //   // 🔥 Abre o popup em vez do scroll
+    //   window.location.href = `popup-method.html?id=${id}&type=${type}&name=${encodeURIComponent(name)}`;
+    // });
 
 
     container.appendChild(card);
@@ -52,7 +71,7 @@ renderSeries();
 const btnMaratona = document.getElementById("btnMaratonaScroll");
 if (btnMaratona) {
   btnMaratona.addEventListener("click", () => {
-    window.location.href = "maratona-scroll.html";
+    window.location.href = "mode-marathon.html";
   });
 }
 

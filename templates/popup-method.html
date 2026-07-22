@@ -1,0 +1,58 @@
+<!-- Para escolha de qual Modo de Estudo: Scroll / Speak / Recall / Marathon(Marathon deve separar) -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escolha o Modo de Estudo</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/popup-method.css">
+</head>
+<!-- study-method por:-->
+<!-- popup-method -->
+<body>
+  <div class="popup-overlay">
+    <div class="popup-container">
+      <div class="popup-header">
+        <h2>🎯 Como estudar?</h2>
+        <button class="btn-close" onclick="fecharPopup()">✕</button>
+      </div>
+      
+      <div class="popup-body">
+        <p class="popup-subtitle">
+          Escolha o modo para: <strong id="popup-item-name">Carregando...</strong>
+        </p>
+        
+        <div class="modos-grid">
+          <button class="modo-card" onclick="escolherModo('scroll')">
+            <span class="modo-icon">📜</span>
+            <span class="modo-nome">Scroll</span>
+            <span class="modo-desc">Leitura contínua</span>
+          </button>
+          
+          <button class="modo-card" onclick="escolherModo('speak')">
+            <span class="modo-icon">🃏</span>
+            <span class="modo-nome">Speak</span>
+            <span class="modo-desc">Flashcards com áudio</span>
+          </button>
+
+          <button class="modo-card" onclick="escolherModo('recall')">
+            <span class="modo-icon">🧠</span>
+            <span class="modo-nome">Recall</span>
+            <!-- <span class="modo-desc">Teste de memória</span> -->
+            <span class="modo-desc">Como se diz...</span>
+          </button>
+          
+          <!-- <button class="modo-card" onclick="escolherModo('marathon')">
+            <span class="modo-icon">🏃</span>
+            <span class="modo-nome">Marathon</span>
+            <span class="modo-desc">Todas as listas do modo</span>
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="../js/popup-method.js"></script>
+</body>
+</html>
