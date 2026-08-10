@@ -94,16 +94,22 @@ speakeasy-fluent/
 │   └── study-audio.js
 └── data/
     └── frases.json         # Suas listas de frases
+```
 
 ---
 
 ## 📝 Como criar suas próprias frases (agora via JSON)
 
-# frase.idioma_alvo
-# frase.idioma_nativo native_text
+### frase.idioma_alvo
 
+Pendente...
+
+### frase.idioma_nativo native_text
+
+Pendente...
 
 ## 🤝 Como contribuir (para o futuro)
+
 Faça um fork
 
 Crie uma branch: git checkout -b feature/nova-feature
@@ -113,7 +119,6 @@ Commit: git commit -m 'feat: adiciona nova feature'
 Push: git push origin feature/nova-feature
 
 Abra um Pull Request
-
 
 📄 Licença
 MIT — use, modifique, compartilhe. Só não esquece de dar os créditos 😉
@@ -125,7 +130,6 @@ Sugestões? Críticas? Frases novas? Abra uma issue!
 ⭐ Se gostou da ideia, deixa uma estrela no repositório!
 
 Made with ☕ and lots of reading out loud
-
 
 ## ⚠️ Disclaimer / Aviso Legal
 
@@ -143,13 +147,14 @@ Made with ☕ and lots of reading out loud
 
 **Ao utilizar este projeto, você concorda que é o único responsável pelo conteúdo que cria, armazena e estuda.**
 
-
 ## 🎯 Funcionalidades avançadas (em desenvolvimento)
 
 ### 🔄 Modo Maratona
+
 *Estude todas as listas em sequência, sem interrupções.*
 
 Ideal para:
+
 - Treinos no ônibus ou metrô 🚆
 - Revisão geral antes de uma viagem ✈️
 - Imersão rápida de 15-30 minutos ⏱️
@@ -157,6 +162,7 @@ Ideal para:
 > Basta clicar em "Iniciar Maratona" na página de listas e escolher o modo (scroll ou áudio).
 
 ### 🔇 Modo só inglês no áudio
+
 *Quando você já estiver confiante, desative a tradução e treine apenas com o idioma alvo.*
 
 ✔️ Ideal para nível intermediário/avançado  
@@ -177,6 +183,7 @@ Ideal para:
 ## ✅ Status do projeto (MVP)
 
 ### Totalmente funcional
+
 - ✅ Modo Scroll (lista única)
 - ✅ Maratona Scroll (todas as listas)
 - ✅ Cards responsivos (4/3/1 colunas)
@@ -185,15 +192,18 @@ Ideal para:
 - ✅ GitHub Pages funcionando (web + mobile)
 
 ### Parcialmente funcional
+
 - 🟡 Modo Áudio (requer tela ativa)
 - 🟡 Velocidade padrão (ajustando)
 
 ### Em desenvolvimento
+
 - 🔄 Maratona Áudio
 - 🔄 Contador de frases
 - 🔄 Scroll infinito sem delay
 
 ### Próximos passos
+
 - 📝 Suporte a músicas/trechos
 - 🎙️ Backend para criar listas
 - 🔇 Áudio em background
@@ -201,8 +211,10 @@ Ideal para:
 ### Desenho de Fluxo de Navegação (Teste de Gráfico)
 
 ### 🎨 Desenhando os Fluxos com Mermaid (Cole no seu GitHub)
+
 Copie o código abaixo e cole no seu README.md ou em uma Issue de Arquitetura. O GitHub vai renderizar um mapa visual dos caminhos do seu aplicativo para você nunca mais ter que reexplicar isso para as IAs:
 
+```mermaid
 graph TD
     A[Usuário faz Login] --> B{Possui Perfil Configurado?}
     B -- Não --> C[Tela: Configurar Idioma Nativo e Alvo]
@@ -219,3 +231,4 @@ graph TD
     F1 & F2 & F3 --> G[Cadastrar Frases no Idioma Alvo + Tradução]
     G --> H[(Salvar no Banco de Dados / Supabase)]
     H --> I[Tela: Modo de Estudo / Flashcards]
+```
