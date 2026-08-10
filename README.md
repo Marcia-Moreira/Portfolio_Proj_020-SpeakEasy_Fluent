@@ -197,3 +197,25 @@ Ideal para:
 - 📝 Suporte a músicas/trechos
 - 🎙️ Backend para criar listas
 - 🔇 Áudio em background
+
+### Desenho de Fluxo de Navegação (Teste de Gráfico)
+
+### 🎨 Desenhando os Fluxos com Mermaid (Cole no seu GitHub)
+Copie o código abaixo e cole no seu README.md ou em uma Issue de Arquitetura. O GitHub vai renderizar um mapa visual dos caminhos do seu aplicativo para você nunca mais ter que reexplicar isso para as IAs:
+
+graph TD
+    A[Usuário faz Login] --> B{Possui Perfil Configurado?}
+    B -- Não --> C[Tela: Configurar Idioma Nativo e Alvo]
+    B -- Sim --> D[Tela: Dashboard Principal]
+    
+    C --> D
+    D --> E[Ação: Criar Nova Lista]
+    
+    E --> F[Escolher Tipo de Lista]
+    F --> F1[Tipo: Cotidiano/Geral]
+    F --> F2[Tipo: Música]
+    F --> F3[Tipo: Série]
+    
+    F1 & F2 & F3 --> G[Cadastrar Frases no Idioma Alvo + Tradução]
+    G --> H[(Salvar no Banco de Dados / Supabase)]
+    H --> I[Tela: Modo de Estudo / Flashcards]
