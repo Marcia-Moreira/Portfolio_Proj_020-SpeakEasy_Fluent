@@ -100,11 +100,11 @@ speakeasy-fluent/
 
 ## 📝 Como criar suas próprias frases (agora via JSON)
 
-### frase.idioma_alvo
+### Frase.idioma_alvo
 
 Pendente...
 
-### frase.idioma_nativo native_text
+### Frase.idioma_nativo native_text
 
 Pendente...
 
@@ -207,6 +207,8 @@ Ideal para:
 - 📝 Suporte a músicas/trechos
 - 🎙️ Backend para criar listas
 - 🔇 Áudio em background
+  
+---
 
 ### Desenho de Fluxo de Navegação (Teste de Gráfico)
 
@@ -231,4 +233,62 @@ graph TD
     F1 & F2 & F3 --> G[Cadastrar Frases no Idioma Alvo + Tradução]
     G --> H[(Salvar no Banco de Dados / Supabase)]
     H --> I[Tela: Modo de Estudo / Flashcards]
+```
+
+---
+
+## 🖥️ 3. O Front-End e as Métricas do Dashboard
+
+Sim, nós vamos fazer um Front-End completo para isso! O usuário terá uma tela linda e visual para acompanhar o seu progresso técnico.
+
+No arquivo README.md, essas métricas servem para provar ao mercado que seu app entrega dados reais. No sistema, elas geram o sentimento de evolução do aluno.
+
+As 4 Métricas Comerciais Essenciais:
+
+1- Total de Frases Prontas (Fixadas): Quantas frases atingiram o estágio máximo (revisão com mais de 30 dias de intervalo). Isso mostra o "tamanho do vocabulário" dominado pelo aluno.
+
+2- Ofensiva / Sequência de Dias (Streak): Quantos dias seguidos o usuário logou e completou suas revisões diárias (o famoso foguinho do Duolingo, excelente para retenção de clientes).
+
+3- Tempo Total de Prática: Um contador que soma os minutos em que o usuário ficou ouvindo e repetindo as frases na tela de estudos.
+
+4- Taxa de Retenção (Acertos): Um gráfico ou porcentagem simples mostrando a relação de cliques em Lembrei vs Esqueci (ex: 85% de aproveitamento).
+
+---
+
+### Grafico Geral de Navegação do Cliente
+
+```mermaid
+
+graph TD
+    %% 🗺️ Fluxo de Telas e Conexões
+    A(index.html - Landing Page) --> B[login.html - Tela de Acesso/Cadastro]
+    B --> C{Autenticado com Sucesso?}
+    
+    C -- Sim --> D[dashboard.html - Tela Principal com Métricas 🔥]
+    C -- Não --> B
+    
+    D --> E[study-list.html - Menu de Temas e Listas 🔴]
+    D --> F[new-list.html - Criar Nova Lista Customizada]
+    
+    F --> Database[(Supabase PostgreSQL)]
+    E --> G[study-detail.html - Ver todas as frases daquela Lista]
+    
+    G --> H[mode-scroll.html - Modo Rolagem Manual]
+    G --> I[study-audio.html - Player Automatizado de Repetição de Áudio]
+    
+    H & I --> J[Algoritmo de Memorização]
+    J --> Database
+    Database --> D
+
+    %% 🎨 Definição de Cores das Caixas (Estilos)
+    classDef corPublic fill:#fff3cd,stroke:#ffc107,stroke-width:2px,color:#000;
+    classDef corPrivate fill:#d1ecf1,stroke:#17a2b8,stroke-width:2px,color:#000;
+    classDef corEngine fill:#f8d7da,stroke:#dc3545,stroke-width:2px,color:#000;
+
+    %% 🏷️ Aplicando as cores em cada bloco correspondente
+    class A,B corPublic;
+    class D,E,F,G,H,I corPrivate;
+    class C,J,Database corEngine;
+
+
 ```
